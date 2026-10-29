@@ -1,0 +1,4117 @@
+{
+ "title": "Submit Supplier - v44.1",
+ "sheetName": "Submit Supplier",
+ "columnCount": 411,
+ "columns": [
+  {
+   "index": 1,
+   "letter": "A",
+   "area": "Area",
+   "field": "Fields",
+   "occurrence": 1,
+   "restriction": "Restrictions",
+   "format": "Format",
+   "key": "Area :: Fields"
+  },
+  {
+   "index": 2,
+   "letter": "B",
+   "area": "All",
+   "field": "Spreadsheet Key*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "All :: Spreadsheet Key*"
+  },
+  {
+   "index": 3,
+   "letter": "C",
+   "area": "All",
+   "field": "Add Only",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "All :: Add Only"
+  },
+  {
+   "index": 4,
+   "letter": "D",
+   "area": "All",
+   "field": "Supplier",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Supplier_ID",
+   "key": "All :: Supplier"
+  },
+  {
+   "index": 5,
+   "letter": "E",
+   "area": "Business Process Parameters (All)",
+   "field": "Auto Complete",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Business Process Parameters (All) :: Auto Complete"
+  },
+  {
+   "index": 6,
+   "letter": "F",
+   "area": "Comment Data (All > Business Process Parameters)",
+   "field": "Comment",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Comment Data (All > Business Process Parameters) :: Comment"
+  },
+  {
+   "index": 7,
+   "letter": "G",
+   "area": "Comment Data (All > Business Process Parameters)",
+   "field": "Worker",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Contingent_Worker_ID",
+   "key": "Comment Data (All > Business Process Parameters) :: Worker"
+  },
+  {
+   "index": 8,
+   "letter": "H",
+   "area": "Supplier Data (All)",
+   "field": "Supplier ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Supplier Data (All) :: Supplier ID"
+  },
+  {
+   "index": 9,
+   "letter": "I",
+   "area": "Supplier Data (All)",
+   "field": "Supplier Reference ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Supplier Data (All) :: Supplier Reference ID"
+  },
+  {
+   "index": 10,
+   "letter": "J",
+   "area": "Supplier Data (All)",
+   "field": "External Sourceable ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Supplier Data (All) :: External Sourceable ID"
+  },
+  {
+   "index": 11,
+   "letter": "K",
+   "area": "Supplier Data (All)",
+   "field": "Supplier Name",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Supplier Data (All) :: Supplier Name"
+  },
+  {
+   "index": 12,
+   "letter": "L",
+   "area": "Supplier Data (All)",
+   "field": "Worktag Only",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Worktag Only"
+  },
+  {
+   "index": 13,
+   "letter": "M",
+   "area": "Supplier Data (All)",
+   "field": "Restricted To Companies+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Company_Reference_ID",
+   "key": "Supplier Data (All) :: Restricted To Companies+"
+  },
+  {
+   "index": 14,
+   "letter": "N",
+   "area": "Supplier Data (All)",
+   "field": "Approval Status",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Document_Status_ID",
+   "key": "Supplier Data (All) :: Approval Status"
+  },
+  {
+   "index": 15,
+   "letter": "O",
+   "area": "Supplier Data (All)",
+   "field": "Submit",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Submit"
+  },
+  {
+   "index": 16,
+   "letter": "P",
+   "area": "Supplier Data (All)",
+   "field": "Create Supplier from Customer",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Customer_ID",
+   "key": "Supplier Data (All) :: Create Supplier from Customer"
+  },
+  {
+   "index": 17,
+   "letter": "Q",
+   "area": "Supplier Data (All)",
+   "field": "Create Supplier from Financial Institution",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Financial_Institution_ID",
+   "key": "Supplier Data (All) :: Create Supplier from Financial Institution"
+  },
+  {
+   "index": 18,
+   "letter": "R",
+   "area": "Supplier Data (All)",
+   "field": "Create Supplier from Tax Authority",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Tax_Authority_ID",
+   "key": "Supplier Data (All) :: Create Supplier from Tax Authority"
+  },
+  {
+   "index": 19,
+   "letter": "S",
+   "area": "Supplier Data (All)",
+   "field": "Create Supplier from Investor",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Investor_ID",
+   "key": "Supplier Data (All) :: Create Supplier from Investor"
+  },
+  {
+   "index": 20,
+   "letter": "T",
+   "area": "Supplier Data (All)",
+   "field": "Tax Authority Form Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Tax_Authority_Form_Type",
+   "key": "Supplier Data (All) :: Tax Authority Form Type"
+  },
+  {
+   "index": 21,
+   "letter": "U",
+   "area": "Supplier Data (All)",
+   "field": "IRS 1099 Supplier",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: IRS 1099 Supplier"
+  },
+  {
+   "index": 22,
+   "letter": "V",
+   "area": "Supplier Data (All)",
+   "field": "Report 1099 with Parent",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Report 1099 with Parent"
+  },
+  {
+   "index": 23,
+   "letter": "W",
+   "area": "Tax ID Widget Data (All > Supplier Data)",
+   "field": "Replace All",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Tax ID Widget Data (All > Supplier Data) :: Replace All"
+  },
+  {
+   "index": 24,
+   "letter": "X",
+   "area": "Tax ID Data+ (All > Supplier Data > Tax ID Widget Data)",
+   "field": "Row ID**",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Tax ID Data+ (All > Supplier Data > Tax ID Widget Data) :: Row ID**"
+  },
+  {
+   "index": 25,
+   "letter": "Y",
+   "area": "Tax ID Data+ (All > Supplier Data > Tax ID Widget Data)",
+   "field": "Delete",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Tax ID Data+ (All > Supplier Data > Tax ID Widget Data) :: Delete"
+  },
+  {
+   "index": 26,
+   "letter": "Z",
+   "area": "Tax ID Data+ (All > Supplier Data > Tax ID Widget Data)",
+   "field": "Tax ID Text",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Tax ID Data+ (All > Supplier Data > Tax ID Widget Data) :: Tax ID Text"
+  },
+  {
+   "index": 27,
+   "letter": "AA",
+   "area": "Tax ID Data+ (All > Supplier Data > Tax ID Widget Data)",
+   "field": "Tax ID Type*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Tax_ID_Type",
+   "key": "Tax ID Data+ (All > Supplier Data > Tax ID Widget Data) :: Tax ID Type*"
+  },
+  {
+   "index": 28,
+   "letter": "AB",
+   "area": "Tax ID Data+ (All > Supplier Data > Tax ID Widget Data)",
+   "field": "Transaction Tax ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Tax ID Data+ (All > Supplier Data > Tax ID Widget Data) :: Transaction Tax ID"
+  },
+  {
+   "index": 29,
+   "letter": "AC",
+   "area": "Tax ID Data+ (All > Supplier Data > Tax ID Widget Data)",
+   "field": "Primary Tax ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Tax ID Data+ (All > Supplier Data > Tax ID Widget Data) :: Primary Tax ID"
+  },
+  {
+   "index": 30,
+   "letter": "AD",
+   "area": "Validation Service Data+ (All > Supplier Data > Tax ID Widget Data > Tax ID Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Validation Service Data+ (All > Supplier Data > Tax ID Widget Data > Tax ID Data+) :: Row ID*"
+  },
+  {
+   "index": 31,
+   "letter": "AE",
+   "area": "Validation Service Data+ (All > Supplier Data > Tax ID Widget Data > Tax ID Data+)",
+   "field": "Identification Number",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Validation Service Data+ (All > Supplier Data > Tax ID Widget Data > Tax ID Data+) :: Identification Number"
+  },
+  {
+   "index": 32,
+   "letter": "AF",
+   "area": "Validation Service Data+ (All > Supplier Data > Tax ID Widget Data > Tax ID Data+)",
+   "field": "Status Reference",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Validation Service Data+ (All > Supplier Data > Tax ID Widget Data > Tax ID Data+) :: Status Reference"
+  },
+  {
+   "index": 33,
+   "letter": "AG",
+   "area": "Validation Service Data+ (All > Supplier Data > Tax ID Widget Data > Tax ID Data+)",
+   "field": "Data Provider",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Tax_ID_Validation_Service_ID",
+   "key": "Validation Service Data+ (All > Supplier Data > Tax ID Widget Data > Tax ID Data+) :: Data Provider"
+  },
+  {
+   "index": 34,
+   "letter": "AH",
+   "area": "Validation Service Data+ (All > Supplier Data > Tax ID Widget Data > Tax ID Data+)",
+   "field": "Date",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "YYYY-MM-DD",
+   "key": "Validation Service Data+ (All > Supplier Data > Tax ID Widget Data > Tax ID Data+) :: Date"
+  },
+  {
+   "index": 35,
+   "letter": "AI",
+   "area": "Validation Service Data+ (All > Supplier Data > Tax ID Widget Data > Tax ID Data+)",
+   "field": "Company Name",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Validation Service Data+ (All > Supplier Data > Tax ID Widget Data > Tax ID Data+) :: Company Name"
+  },
+  {
+   "index": 36,
+   "letter": "AJ",
+   "area": "Validation Service Data+ (All > Supplier Data > Tax ID Widget Data > Tax ID Data+)",
+   "field": "Address",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Validation Service Data+ (All > Supplier Data > Tax ID Widget Data > Tax ID Data+) :: Address"
+  },
+  {
+   "index": 37,
+   "letter": "AK",
+   "area": "Validation Service Data+ (All > Supplier Data > Tax ID Widget Data > Tax ID Data+)",
+   "field": "Additional Information",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Validation Service Data+ (All > Supplier Data > Tax ID Widget Data > Tax ID Data+) :: Additional Information"
+  },
+  {
+   "index": 38,
+   "letter": "AL",
+   "area": "Tax Status Widget Data (All > Supplier Data)",
+   "field": "Replace All",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Tax Status Widget Data (All > Supplier Data) :: Replace All"
+  },
+  {
+   "index": 39,
+   "letter": "AM",
+   "area": "Tax Status Data+ (All > Supplier Data > Tax Status Widget Data)",
+   "field": "Row ID**",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Tax Status Data+ (All > Supplier Data > Tax Status Widget Data) :: Row ID**"
+  },
+  {
+   "index": 40,
+   "letter": "AN",
+   "area": "Tax Status Data+ (All > Supplier Data > Tax Status Widget Data)",
+   "field": "Delete",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Tax Status Data+ (All > Supplier Data > Tax Status Widget Data) :: Delete"
+  },
+  {
+   "index": 41,
+   "letter": "AO",
+   "area": "Tax Status Data+ (All > Supplier Data > Tax Status Widget Data)",
+   "field": "Country*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "ISO_3166-1_Alpha-2_Code",
+   "key": "Tax Status Data+ (All > Supplier Data > Tax Status Widget Data) :: Country*"
+  },
+  {
+   "index": 42,
+   "letter": "AP",
+   "area": "Tax Status Data+ (All > Supplier Data > Tax Status Widget Data)",
+   "field": "Transaction Tax Status",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Transaction_Tax_Status_ID",
+   "key": "Tax Status Data+ (All > Supplier Data > Tax Status Widget Data) :: Transaction Tax Status"
+  },
+  {
+   "index": 43,
+   "letter": "AQ",
+   "area": "Tax Status Data+ (All > Supplier Data > Tax Status Widget Data)",
+   "field": "Withholding Tax Status",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Tax_Withholding_Status_ID",
+   "key": "Tax Status Data+ (All > Supplier Data > Tax Status Widget Data) :: Withholding Tax Status"
+  },
+  {
+   "index": 44,
+   "letter": "AR",
+   "area": "Supplier Data (All)",
+   "field": "Supplier Category",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Supplier_Category_ID",
+   "key": "Supplier Data (All) :: Supplier Category"
+  },
+  {
+   "index": 45,
+   "letter": "AS",
+   "area": "Supplier Data (All)",
+   "field": "Supplier Group+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Supplier_Group_ID",
+   "key": "Supplier Data (All) :: Supplier Group+"
+  },
+  {
+   "index": 46,
+   "letter": "AT",
+   "area": "Supplier Data (All)",
+   "field": "Document Link",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Supplier Data (All) :: Document Link"
+  },
+  {
+   "index": 47,
+   "letter": "AU",
+   "area": "Supplier Data (All)",
+   "field": "Tax Document Date",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "YYYY-MM-DD",
+   "key": "Supplier Data (All) :: Tax Document Date"
+  },
+  {
+   "index": 48,
+   "letter": "AV",
+   "area": "Supplier Data (All)",
+   "field": "Default Tax Code",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Tax_Code_ID",
+   "key": "Supplier Data (All) :: Default Tax Code"
+  },
+  {
+   "index": 49,
+   "letter": "AW",
+   "area": "Supplier Data (All)",
+   "field": "Default Withholding Tax Code",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Tax_Code_ID",
+   "key": "Supplier Data (All) :: Default Withholding Tax Code"
+  },
+  {
+   "index": 50,
+   "letter": "AX",
+   "area": "Supplier Data (All)",
+   "field": "Supplier Source",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "External_Supplier_Invoice_Source_ID",
+   "key": "Supplier Data (All) :: Supplier Source"
+  },
+  {
+   "index": 51,
+   "letter": "AY",
+   "area": "Supplier Data (All)",
+   "field": "Supplier Change Source",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "External_Supplier_Invoice_Source_ID",
+   "key": "Supplier Data (All) :: Supplier Change Source"
+  },
+  {
+   "index": 52,
+   "letter": "AZ",
+   "area": "Supplier Data (All)",
+   "field": "FATCA",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: FATCA"
+  },
+  {
+   "index": 53,
+   "letter": "BA",
+   "area": "Supplier Data (All)",
+   "field": "Certificate of Insurance Date",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "YYYY-MM-DD",
+   "key": "Supplier Data (All) :: Certificate of Insurance Date"
+  },
+  {
+   "index": 54,
+   "letter": "BB",
+   "area": "Supplier Data (All)",
+   "field": "Customer Account Number",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Supplier Data (All) :: Customer Account Number"
+  },
+  {
+   "index": 55,
+   "letter": "BC",
+   "area": "Supplier Data (All)",
+   "field": "DUNS Number",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Supplier Data (All) :: DUNS Number"
+  },
+  {
+   "index": 56,
+   "letter": "BD",
+   "area": "Supplier Data (All)",
+   "field": "Unique Entity Identifier",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Supplier Data (All) :: Unique Entity Identifier"
+  },
+  {
+   "index": 57,
+   "letter": "BE",
+   "area": "Supplier Data (All)",
+   "field": "Invoice Any Supplier",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Invoice Any Supplier"
+  },
+  {
+   "index": 58,
+   "letter": "BF",
+   "area": "Supplier Data (All)",
+   "field": "Edit Portal Taxes",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Edit Portal Taxes"
+  },
+  {
+   "index": 59,
+   "letter": "BG",
+   "area": "Supplier Data (All)",
+   "field": "Restricted Companies for Supplier Contacts+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Company_Reference_ID",
+   "key": "Supplier Data (All) :: Restricted Companies for Supplier Contacts+"
+  },
+  {
+   "index": 60,
+   "letter": "BH",
+   "area": "Supplier Data (All)",
+   "field": "Enable Global Location Number",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Enable Global Location Number"
+  },
+  {
+   "index": 61,
+   "letter": "BI",
+   "area": "Supplier Data (All)",
+   "field": "Disable Change Order",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Disable Change Order"
+  },
+  {
+   "index": 62,
+   "letter": "BJ",
+   "area": "Supplier Data (All)",
+   "field": "Purchase Order Issue Option",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Purchase_Order_Issue_Option_ID",
+   "key": "Supplier Data (All) :: Purchase Order Issue Option"
+  },
+  {
+   "index": 63,
+   "letter": "BK",
+   "area": "Supplier Data (All)",
+   "field": "Change Order Issue Option",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Purchase_Order_Issue_Option_ID",
+   "key": "Supplier Data (All) :: Change Order Issue Option"
+  },
+  {
+   "index": 64,
+   "letter": "BL",
+   "area": "Default PO Issue Email WWS Widget Data (All > Supplier Data)",
+   "field": "Replace All",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Default PO Issue Email WWS Widget Data (All > Supplier Data) :: Replace All"
+  },
+  {
+   "index": 65,
+   "letter": "BM",
+   "area": "Default PO Issue Email Data+ (All > Supplier Data > Default PO Issue Email WWS Widget Data)",
+   "field": "Row ID**",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Default PO Issue Email Data+ (All > Supplier Data > Default PO Issue Email WWS Widget Data) :: Row ID**"
+  },
+  {
+   "index": 66,
+   "letter": "BN",
+   "area": "Default PO Issue Email Data+ (All > Supplier Data > Default PO Issue Email WWS Widget Data)",
+   "field": "Delete",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Default PO Issue Email Data+ (All > Supplier Data > Default PO Issue Email WWS Widget Data) :: Delete"
+  },
+  {
+   "index": 67,
+   "letter": "BO",
+   "area": "Default PO Issue Email Data+ (All > Supplier Data > Default PO Issue Email WWS Widget Data)",
+   "field": "Email",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Email_ID",
+   "key": "Default PO Issue Email Data+ (All > Supplier Data > Default PO Issue Email WWS Widget Data) :: Email"
+  },
+  {
+   "index": 68,
+   "letter": "BP",
+   "area": "Default PO Issue Email Data+ (All > Supplier Data > Default PO Issue Email WWS Widget Data)",
+   "field": "Email Address",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Default PO Issue Email Data+ (All > Supplier Data > Default PO Issue Email WWS Widget Data) :: Email Address"
+  },
+  {
+   "index": 69,
+   "letter": "BQ",
+   "area": "Supplier Data (All)",
+   "field": "Multi-Supplier Supplier Link for PO Issue",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Supplier_Link_Name",
+   "key": "Supplier Data (All) :: Multi-Supplier Supplier Link for PO Issue"
+  },
+  {
+   "index": 70,
+   "letter": "BR",
+   "area": "Supplier Data (All)",
+   "field": "Shipping Terms",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Shipping_Terms_ID",
+   "key": "Supplier Data (All) :: Shipping Terms"
+  },
+  {
+   "index": 71,
+   "letter": "BS",
+   "area": "Supplier Data (All)",
+   "field": "Shipping Method",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Shipping_Method_ID",
+   "key": "Supplier Data (All) :: Shipping Method"
+  },
+  {
+   "index": 72,
+   "letter": "BT",
+   "area": "Supplier Data (All)",
+   "field": "Acknowledgement Expected",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Acknowledgement Expected"
+  },
+  {
+   "index": 73,
+   "letter": "BU",
+   "area": "Supplier Data (All)",
+   "field": "Supplier Minimum Order Amount",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Number (26,6)",
+   "key": "Supplier Data (All) :: Supplier Minimum Order Amount"
+  },
+  {
+   "index": 74,
+   "letter": "BV",
+   "area": "Supplier Data (All)",
+   "field": "Minimum Order Amount Currency",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Currency_ID",
+   "key": "Supplier Data (All) :: Minimum Order Amount Currency"
+  },
+  {
+   "index": 75,
+   "letter": "BW",
+   "area": "Supplier Data (All)",
+   "field": "Supplier Lead Time",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Number",
+   "key": "Supplier Data (All) :: Supplier Lead Time"
+  },
+  {
+   "index": 76,
+   "letter": "BX",
+   "area": "Supplier Data (All)",
+   "field": "Enable ASN",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Enable ASN"
+  },
+  {
+   "index": 77,
+   "letter": "BY",
+   "area": "Supplier Data (All)",
+   "field": "ASN Due In Days",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Number",
+   "key": "Supplier Data (All) :: ASN Due In Days"
+  },
+  {
+   "index": 78,
+   "letter": "BZ",
+   "area": "Supplier Data (All)",
+   "field": "Overrides Tenant Setup for Supplier Invoice Discount Exclusion",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Overrides Tenant Setup for Supplier Invoice Discount Exclusion"
+  },
+  {
+   "index": 79,
+   "letter": "CA",
+   "area": "Supplier Data (All)",
+   "field": "Exclude Freight Amount from Supplier Invoice Discount",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Exclude Freight Amount from Supplier Invoice Discount"
+  },
+  {
+   "index": 80,
+   "letter": "CB",
+   "area": "Supplier Data (All)",
+   "field": "Exclude Other Charges from Supplier Invoice Discount",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Exclude Other Charges from Supplier Invoice Discount"
+  },
+  {
+   "index": 81,
+   "letter": "CC",
+   "area": "Supplier Data (All)",
+   "field": "Exclude Tax Amount from Supplier Invoice Discount",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Exclude Tax Amount from Supplier Invoice Discount"
+  },
+  {
+   "index": 82,
+   "letter": "CD",
+   "area": "Supplier Data (All)",
+   "field": "Payment Terms",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Payment_Terms_ID",
+   "key": "Supplier Data (All) :: Payment Terms"
+  },
+  {
+   "index": 83,
+   "letter": "CE",
+   "area": "Supplier Data (All)",
+   "field": "Terms Based on Invoice Received Date",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Terms Based on Invoice Received Date"
+  },
+  {
+   "index": 84,
+   "letter": "CF",
+   "area": "Supplier Data (All)",
+   "field": "Payment Types Accepted+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Payment_Type_ID",
+   "key": "Supplier Data (All) :: Payment Types Accepted+"
+  },
+  {
+   "index": 85,
+   "letter": "CG",
+   "area": "Supplier Data (All)",
+   "field": "Default Payment Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Payment_Type_ID",
+   "key": "Supplier Data (All) :: Default Payment Type"
+  },
+  {
+   "index": 86,
+   "letter": "CH",
+   "area": "Supplier Data (All)",
+   "field": "Default Additional Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Additional_Reference_Type_ID",
+   "key": "Supplier Data (All) :: Default Additional Type"
+  },
+  {
+   "index": 87,
+   "letter": "CI",
+   "area": "Supplier Data (All)",
+   "field": "Procurement Credit Card",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Expense_Credit_Card_ID",
+   "key": "Supplier Data (All) :: Procurement Credit Card"
+  },
+  {
+   "index": 88,
+   "letter": "CJ",
+   "area": "Supplier Data (All)",
+   "field": "Included Children+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Supplier_ID",
+   "key": "Supplier Data (All) :: Included Children+"
+  },
+  {
+   "index": 89,
+   "letter": "CK",
+   "area": "Supplier Data (All)",
+   "field": "Proposed Children+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Supplier_ID",
+   "key": "Supplier Data (All) :: Proposed Children+"
+  },
+  {
+   "index": 90,
+   "letter": "CL",
+   "area": "Business Entity Data (All > Supplier Data)",
+   "field": "Business Entity Name",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Business Entity Data (All > Supplier Data) :: Business Entity Name"
+  },
+  {
+   "index": 91,
+   "letter": "CM",
+   "area": "Business Entity Data (All > Supplier Data)",
+   "field": "Business Entity Phonetic Name",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Business Entity Data (All > Supplier Data) :: Business Entity Phonetic Name"
+  },
+  {
+   "index": 92,
+   "letter": "CN",
+   "area": "Business Entity Data (All > Supplier Data)",
+   "field": "Business Entity Tax ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Business Entity Data (All > Supplier Data) :: Business Entity Tax ID"
+  },
+  {
+   "index": 93,
+   "letter": "CO",
+   "area": "Business Entity Data (All > Supplier Data)",
+   "field": "External Entity ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Business Entity Data (All > Supplier Data) :: External Entity ID"
+  },
+  {
+   "index": 94,
+   "letter": "CP",
+   "area": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Row ID*"
+  },
+  {
+   "index": 95,
+   "letter": "CQ",
+   "area": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Formatted Address",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Formatted Address"
+  },
+  {
+   "index": 96,
+   "letter": "CR",
+   "area": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Address Format Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Address Format Type"
+  },
+  {
+   "index": 97,
+   "letter": "CS",
+   "area": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Defaulted Business Site Address",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Defaulted Business Site Address"
+  },
+  {
+   "index": 98,
+   "letter": "CT",
+   "area": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Delete",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Delete"
+  },
+  {
+   "index": 99,
+   "letter": "CU",
+   "area": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Do Not Replace All",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Do Not Replace All"
+  },
+  {
+   "index": 100,
+   "letter": "CV",
+   "area": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Effective Date",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "YYYY-MM-DD",
+   "key": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Effective Date"
+  },
+  {
+   "index": 101,
+   "letter": "CW",
+   "area": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Country",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "ISO_3166-1_Alpha-2_Code",
+   "key": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Country"
+  },
+  {
+   "index": 102,
+   "letter": "CX",
+   "area": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Last Modified",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "DateTime",
+   "key": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Last Modified"
+  },
+  {
+   "index": 103,
+   "letter": "CY",
+   "area": "Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+) :: Row ID*"
+  },
+  {
+   "index": 104,
+   "letter": "CZ",
+   "area": "Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+)",
+   "field": "Descriptor",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+) :: Descriptor"
+  },
+  {
+   "index": 105,
+   "letter": "DA",
+   "area": "Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+)",
+   "field": "Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+) :: Type"
+  },
+  {
+   "index": 106,
+   "letter": "DB",
+   "area": "Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+)",
+   "field": "Address Line Data",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+) :: Address Line Data"
+  },
+  {
+   "index": 107,
+   "letter": "DC",
+   "area": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Municipality",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Municipality"
+  },
+  {
+   "index": 108,
+   "letter": "DD",
+   "area": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Country City",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Country_Subregion_Code_In_Country",
+   "key": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Country City"
+  },
+  {
+   "index": 109,
+   "letter": "DE",
+   "area": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "ISO 3166 1 Alpha 2 Code",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "ISO_3166-1_Alpha-2_Code",
+   "key": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: ISO 3166 1 Alpha 2 Code"
+  },
+  {
+   "index": 110,
+   "letter": "DF",
+   "area": "Submunicipality Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Submunicipality Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+) :: Row ID*"
+  },
+  {
+   "index": 111,
+   "letter": "DG",
+   "area": "Submunicipality Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+)",
+   "field": "Address Component Name",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Submunicipality Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+) :: Address Component Name"
+  },
+  {
+   "index": 112,
+   "letter": "DH",
+   "area": "Submunicipality Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+)",
+   "field": "Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Submunicipality Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+) :: Type"
+  },
+  {
+   "index": 113,
+   "letter": "DI",
+   "area": "Submunicipality Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+)",
+   "field": "Submunicipality Data",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Submunicipality Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+) :: Submunicipality Data"
+  },
+  {
+   "index": 114,
+   "letter": "DJ",
+   "area": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Country Region",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Country_Region_ID",
+   "key": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Country Region"
+  },
+  {
+   "index": 115,
+   "letter": "DK",
+   "area": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Country Region Descriptor",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Country Region Descriptor"
+  },
+  {
+   "index": 116,
+   "letter": "DL",
+   "area": "Subregion Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Subregion Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+) :: Row ID*"
+  },
+  {
+   "index": 117,
+   "letter": "DM",
+   "area": "Subregion Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+)",
+   "field": "Descriptor",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Subregion Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+) :: Descriptor"
+  },
+  {
+   "index": 118,
+   "letter": "DN",
+   "area": "Subregion Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+)",
+   "field": "Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Subregion Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+) :: Type"
+  },
+  {
+   "index": 119,
+   "letter": "DO",
+   "area": "Subregion Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+)",
+   "field": "Subregion Data",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Subregion Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+) :: Subregion Data"
+  },
+  {
+   "index": 120,
+   "letter": "DP",
+   "area": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Postal Code",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Postal Code"
+  },
+  {
+   "index": 121,
+   "letter": "DQ",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+) :: Row ID*"
+  },
+  {
+   "index": 122,
+   "letter": "DR",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+)",
+   "field": "Public",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+) :: Public"
+  },
+  {
+   "index": 123,
+   "letter": "DS",
+   "area": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+ > Usage Data+)",
+   "field": "Row ID**",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+ > Usage Data+) :: Row ID**"
+  },
+  {
+   "index": 124,
+   "letter": "DT",
+   "area": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+ > Usage Data+)",
+   "field": "Primary",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+ > Usage Data+) :: Primary"
+  },
+  {
+   "index": 125,
+   "letter": "DU",
+   "area": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+ > Usage Data+)",
+   "field": "Type*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Communication_Usage_Type_ID",
+   "key": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+ > Usage Data+) :: Type*"
+  },
+  {
+   "index": 126,
+   "letter": "DV",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+)",
+   "field": "Use For+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Communication_Usage_Behavior_ID",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+) :: Use For+"
+  },
+  {
+   "index": 127,
+   "letter": "DW",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+)",
+   "field": "Use For Tenanted+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Communication_Usage_Behavior_Tenanted_ID",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+) :: Use For Tenanted+"
+  },
+  {
+   "index": 128,
+   "letter": "DX",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+)",
+   "field": "Comments",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+) :: Comments"
+  },
+  {
+   "index": 129,
+   "letter": "DY",
+   "area": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Number of Days",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Number",
+   "key": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Number of Days"
+  },
+  {
+   "index": 130,
+   "letter": "DZ",
+   "area": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Municipality Local",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Municipality Local"
+  },
+  {
+   "index": 131,
+   "letter": "EA",
+   "area": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Address",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Address_ID",
+   "key": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Address"
+  },
+  {
+   "index": 132,
+   "letter": "EB",
+   "area": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Address ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Address ID"
+  },
+  {
+   "index": 133,
+   "letter": "EC",
+   "area": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Row ID*"
+  },
+  {
+   "index": 134,
+   "letter": "ED",
+   "area": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Area Code",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Area Code"
+  },
+  {
+   "index": 135,
+   "letter": "EE",
+   "area": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Tenant Formatted Phone",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Tenant Formatted Phone"
+  },
+  {
+   "index": 136,
+   "letter": "EF",
+   "area": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "International Formatted Phone",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: International Formatted Phone"
+  },
+  {
+   "index": 137,
+   "letter": "EG",
+   "area": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Phone Number Without Area Code",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Phone Number Without Area Code"
+  },
+  {
+   "index": 138,
+   "letter": "EH",
+   "area": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "National Formatted Phone",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: National Formatted Phone"
+  },
+  {
+   "index": 139,
+   "letter": "EI",
+   "area": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "E164 Formatted Phone",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: E164 Formatted Phone"
+  },
+  {
+   "index": 140,
+   "letter": "EJ",
+   "area": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Workday Traditional Formatted Phone",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Workday Traditional Formatted Phone"
+  },
+  {
+   "index": 141,
+   "letter": "EK",
+   "area": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Delete",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Delete"
+  },
+  {
+   "index": 142,
+   "letter": "EL",
+   "area": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Do Not Replace All",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Do Not Replace All"
+  },
+  {
+   "index": 143,
+   "letter": "EM",
+   "area": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Country ISO Code",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Country ISO Code"
+  },
+  {
+   "index": 144,
+   "letter": "EN",
+   "area": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "International Phone Code",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: International Phone Code"
+  },
+  {
+   "index": 145,
+   "letter": "EO",
+   "area": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Phone Number",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Phone Number"
+  },
+  {
+   "index": 146,
+   "letter": "EP",
+   "area": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Phone Extension",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Phone Extension"
+  },
+  {
+   "index": 147,
+   "letter": "EQ",
+   "area": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Phone Device Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Phone_Device_Type_ID",
+   "key": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Phone Device Type"
+  },
+  {
+   "index": 148,
+   "letter": "ER",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+) :: Row ID*"
+  },
+  {
+   "index": 149,
+   "letter": "ES",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+)",
+   "field": "Public",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+) :: Public"
+  },
+  {
+   "index": 150,
+   "letter": "ET",
+   "area": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+ > Usage Data+)",
+   "field": "Row ID**",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+ > Usage Data+) :: Row ID**"
+  },
+  {
+   "index": 151,
+   "letter": "EU",
+   "area": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+ > Usage Data+)",
+   "field": "Primary",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+ > Usage Data+) :: Primary"
+  },
+  {
+   "index": 152,
+   "letter": "EV",
+   "area": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+ > Usage Data+)",
+   "field": "Type*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Communication_Usage_Type_ID",
+   "key": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+ > Usage Data+) :: Type*"
+  },
+  {
+   "index": 153,
+   "letter": "EW",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+)",
+   "field": "Use For+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Communication_Usage_Behavior_ID",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+) :: Use For+"
+  },
+  {
+   "index": 154,
+   "letter": "EX",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+)",
+   "field": "Use For Tenanted+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Communication_Usage_Behavior_Tenanted_ID",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+) :: Use For Tenanted+"
+  },
+  {
+   "index": 155,
+   "letter": "EY",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+)",
+   "field": "Comments",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+) :: Comments"
+  },
+  {
+   "index": 156,
+   "letter": "EZ",
+   "area": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Phone",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Phone_ID",
+   "key": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Phone"
+  },
+  {
+   "index": 157,
+   "letter": "FA",
+   "area": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: ID"
+  },
+  {
+   "index": 158,
+   "letter": "FB",
+   "area": "Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Row ID*"
+  },
+  {
+   "index": 159,
+   "letter": "FC",
+   "area": "Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Delete",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Delete"
+  },
+  {
+   "index": 160,
+   "letter": "FD",
+   "area": "Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Do Not Replace All",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Do Not Replace All"
+  },
+  {
+   "index": 161,
+   "letter": "FE",
+   "area": "Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Email Address",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Email Address"
+  },
+  {
+   "index": 162,
+   "letter": "FF",
+   "area": "Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Email Comment",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Email Comment"
+  },
+  {
+   "index": 163,
+   "letter": "FG",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+) :: Row ID*"
+  },
+  {
+   "index": 164,
+   "letter": "FH",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+)",
+   "field": "Public",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+) :: Public"
+  },
+  {
+   "index": 165,
+   "letter": "FI",
+   "area": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+ > Usage Data+)",
+   "field": "Row ID**",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+ > Usage Data+) :: Row ID**"
+  },
+  {
+   "index": 166,
+   "letter": "FJ",
+   "area": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+ > Usage Data+)",
+   "field": "Primary",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+ > Usage Data+) :: Primary"
+  },
+  {
+   "index": 167,
+   "letter": "FK",
+   "area": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+ > Usage Data+)",
+   "field": "Type*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Communication_Usage_Type_ID",
+   "key": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+ > Usage Data+) :: Type*"
+  },
+  {
+   "index": 168,
+   "letter": "FL",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+)",
+   "field": "Use For+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Communication_Usage_Behavior_ID",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+) :: Use For+"
+  },
+  {
+   "index": 169,
+   "letter": "FM",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+)",
+   "field": "Use For Tenanted+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Communication_Usage_Behavior_Tenanted_ID",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+) :: Use For Tenanted+"
+  },
+  {
+   "index": 170,
+   "letter": "FN",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+)",
+   "field": "Comments",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+) :: Comments"
+  },
+  {
+   "index": 171,
+   "letter": "FO",
+   "area": "Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Email",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Email_ID",
+   "key": "Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Email"
+  },
+  {
+   "index": 172,
+   "letter": "FP",
+   "area": "Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: ID"
+  },
+  {
+   "index": 173,
+   "letter": "FQ",
+   "area": "Instant Messenger Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Instant Messenger Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Row ID*"
+  },
+  {
+   "index": 174,
+   "letter": "FR",
+   "area": "Instant Messenger Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Delete",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Instant Messenger Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Delete"
+  },
+  {
+   "index": 175,
+   "letter": "FS",
+   "area": "Instant Messenger Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Do Not Replace All",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Instant Messenger Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Do Not Replace All"
+  },
+  {
+   "index": 176,
+   "letter": "FT",
+   "area": "Instant Messenger Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Instant Messenger Address",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Instant Messenger Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Instant Messenger Address"
+  },
+  {
+   "index": 177,
+   "letter": "FU",
+   "area": "Instant Messenger Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Instant Messenger Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Instant_Messenger_Type_ID",
+   "key": "Instant Messenger Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Instant Messenger Type"
+  },
+  {
+   "index": 178,
+   "letter": "FV",
+   "area": "Instant Messenger Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Instant Messenger Comment",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Instant Messenger Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Instant Messenger Comment"
+  },
+  {
+   "index": 179,
+   "letter": "FW",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Instant Messenger Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Instant Messenger Data+) :: Row ID*"
+  },
+  {
+   "index": 180,
+   "letter": "FX",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Instant Messenger Data+)",
+   "field": "Public",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Instant Messenger Data+) :: Public"
+  },
+  {
+   "index": 181,
+   "letter": "FY",
+   "area": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Instant Messenger Data+ > Usage Data+)",
+   "field": "Row ID**",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Instant Messenger Data+ > Usage Data+) :: Row ID**"
+  },
+  {
+   "index": 182,
+   "letter": "FZ",
+   "area": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Instant Messenger Data+ > Usage Data+)",
+   "field": "Primary",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Instant Messenger Data+ > Usage Data+) :: Primary"
+  },
+  {
+   "index": 183,
+   "letter": "GA",
+   "area": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Instant Messenger Data+ > Usage Data+)",
+   "field": "Type*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Communication_Usage_Type_ID",
+   "key": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Instant Messenger Data+ > Usage Data+) :: Type*"
+  },
+  {
+   "index": 184,
+   "letter": "GB",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Instant Messenger Data+)",
+   "field": "Use For+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Communication_Usage_Behavior_ID",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Instant Messenger Data+) :: Use For+"
+  },
+  {
+   "index": 185,
+   "letter": "GC",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Instant Messenger Data+)",
+   "field": "Use For Tenanted+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Communication_Usage_Behavior_Tenanted_ID",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Instant Messenger Data+) :: Use For Tenanted+"
+  },
+  {
+   "index": 186,
+   "letter": "GD",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Instant Messenger Data+)",
+   "field": "Comments",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Instant Messenger Data+) :: Comments"
+  },
+  {
+   "index": 187,
+   "letter": "GE",
+   "area": "Instant Messenger Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Instant Messenger",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Instant_Messenger_ID",
+   "key": "Instant Messenger Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Instant Messenger"
+  },
+  {
+   "index": 188,
+   "letter": "GF",
+   "area": "Instant Messenger Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Instant Messenger Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: ID"
+  },
+  {
+   "index": 189,
+   "letter": "GG",
+   "area": "Web Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Web Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Row ID*"
+  },
+  {
+   "index": 190,
+   "letter": "GH",
+   "area": "Web Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Delete",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Web Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Delete"
+  },
+  {
+   "index": 191,
+   "letter": "GI",
+   "area": "Web Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Do Not Replace All",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Web Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Do Not Replace All"
+  },
+  {
+   "index": 192,
+   "letter": "GJ",
+   "area": "Web Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Web Address",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Web Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Web Address"
+  },
+  {
+   "index": 193,
+   "letter": "GK",
+   "area": "Web Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Web Address Comment",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Web Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Web Address Comment"
+  },
+  {
+   "index": 194,
+   "letter": "GL",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+) :: Row ID*"
+  },
+  {
+   "index": 195,
+   "letter": "GM",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+)",
+   "field": "Public",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+) :: Public"
+  },
+  {
+   "index": 196,
+   "letter": "GN",
+   "area": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+ > Usage Data+)",
+   "field": "Row ID**",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+ > Usage Data+) :: Row ID**"
+  },
+  {
+   "index": 197,
+   "letter": "GO",
+   "area": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+ > Usage Data+)",
+   "field": "Primary",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+ > Usage Data+) :: Primary"
+  },
+  {
+   "index": 198,
+   "letter": "GP",
+   "area": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+ > Usage Data+)",
+   "field": "Type*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Communication_Usage_Type_ID",
+   "key": "Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+ > Usage Data+) :: Type*"
+  },
+  {
+   "index": 199,
+   "letter": "GQ",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+)",
+   "field": "Use For+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Communication_Usage_Behavior_ID",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+) :: Use For+"
+  },
+  {
+   "index": 200,
+   "letter": "GR",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+)",
+   "field": "Use For Tenanted+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Communication_Usage_Behavior_Tenanted_ID",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+) :: Use For Tenanted+"
+  },
+  {
+   "index": 201,
+   "letter": "GS",
+   "area": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+)",
+   "field": "Comments",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+) :: Comments"
+  },
+  {
+   "index": 202,
+   "letter": "GT",
+   "area": "Web Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "Web Address",
+   "occurrence": 2,
+   "restriction": "Optional",
+   "format": "Web_Address_ID",
+   "key": "Web Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: Web Address #2"
+  },
+  {
+   "index": 203,
+   "letter": "GU",
+   "area": "Web Address Data+ (All > Supplier Data > Business Entity Data > Contact Data)",
+   "field": "ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Web Address Data+ (All > Supplier Data > Business Entity Data > Contact Data) :: ID"
+  },
+  {
+   "index": 204,
+   "letter": "GV",
+   "area": "Business Entity Logo Image Data (All > Supplier Data > Business Entity Data)",
+   "field": "Filename*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Business Entity Logo Image Data (All > Supplier Data > Business Entity Data) :: Filename*"
+  },
+  {
+   "index": 205,
+   "letter": "GW",
+   "area": "Business Entity Logo Image Data (All > Supplier Data > Business Entity Data)",
+   "field": "Image",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Business Entity Logo Image Data (All > Supplier Data > Business Entity Data) :: Image"
+  },
+  {
+   "index": 206,
+   "letter": "GX",
+   "area": "Settlement Account Widget Data (All > Supplier Data)",
+   "field": "Replace All",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Settlement Account Widget Data (All > Supplier Data) :: Replace All"
+  },
+  {
+   "index": 207,
+   "letter": "GY",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Row ID**",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Row ID**"
+  },
+  {
+   "index": 208,
+   "letter": "GZ",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Delete",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Delete"
+  },
+  {
+   "index": 209,
+   "letter": "HA",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Settlement Bank Account ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Settlement Bank Account ID"
+  },
+  {
+   "index": 210,
+   "letter": "HB",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Country",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "ISO_3166-1_Alpha-2_Code",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Country"
+  },
+  {
+   "index": 211,
+   "letter": "HC",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Currency",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Currency_ID",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Currency"
+  },
+  {
+   "index": 212,
+   "letter": "HD",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Bank Account Nickname",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Bank Account Nickname"
+  },
+  {
+   "index": 213,
+   "letter": "HE",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Bank Account Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Bank_Account_Type_Code",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Bank Account Type"
+  },
+  {
+   "index": 214,
+   "letter": "HF",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Bank Name",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Bank Name"
+  },
+  {
+   "index": 215,
+   "letter": "HG",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Routing Transit Number",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Routing Transit Number"
+  },
+  {
+   "index": 216,
+   "letter": "HH",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Branch ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Branch ID"
+  },
+  {
+   "index": 217,
+   "letter": "HI",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Branch Name",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Branch Name"
+  },
+  {
+   "index": 218,
+   "letter": "HJ",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Bank Account Number",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Bank Account Number"
+  },
+  {
+   "index": 219,
+   "letter": "HK",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Check Digit",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Check Digit"
+  },
+  {
+   "index": 220,
+   "letter": "HL",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Bank Account Name",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Bank Account Name"
+  },
+  {
+   "index": 221,
+   "letter": "HM",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Roll Number",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Roll Number"
+  },
+  {
+   "index": 222,
+   "letter": "HN",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "IBAN",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: IBAN"
+  },
+  {
+   "index": 223,
+   "letter": "HO",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "SWIFT Bank Identification Code",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: SWIFT Bank Identification Code"
+  },
+  {
+   "index": 224,
+   "letter": "HP",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Accepts Payment Types+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Payment_Type_ID",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Accepts Payment Types+"
+  },
+  {
+   "index": 225,
+   "letter": "HQ",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Payment Types+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Payment_Type_ID",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Payment Types+"
+  },
+  {
+   "index": 226,
+   "letter": "HR",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "For Supplier Connections Only",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: For Supplier Connections Only"
+  },
+  {
+   "index": 227,
+   "letter": "HS",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Requires Prenote",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Requires Prenote"
+  },
+  {
+   "index": 228,
+   "letter": "HT",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Payment Type Prenote",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Payment_Type_ID",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Payment Type Prenote"
+  },
+  {
+   "index": 229,
+   "letter": "HU",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Inactive",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Inactive"
+  },
+  {
+   "index": 230,
+   "letter": "HV",
+   "area": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data)",
+   "field": "Bank Instructions",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data) :: Bank Instructions"
+  },
+  {
+   "index": 231,
+   "letter": "HW",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: Row ID*"
+  },
+  {
+   "index": 232,
+   "letter": "HX",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "Formatted Address",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: Formatted Address"
+  },
+  {
+   "index": 233,
+   "letter": "HY",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "Address Format Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: Address Format Type"
+  },
+  {
+   "index": 234,
+   "letter": "HZ",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "Defaulted Business Site Address",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: Defaulted Business Site Address"
+  },
+  {
+   "index": 235,
+   "letter": "IA",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "Delete",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: Delete"
+  },
+  {
+   "index": 236,
+   "letter": "IB",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "Do Not Replace All",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: Do Not Replace All"
+  },
+  {
+   "index": 237,
+   "letter": "IC",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "Effective Date",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "YYYY-MM-DD",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: Effective Date"
+  },
+  {
+   "index": 238,
+   "letter": "ID",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "Country",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "ISO_3166-1_Alpha-2_Code",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: Country"
+  },
+  {
+   "index": 239,
+   "letter": "IE",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "Last Modified",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "DateTime",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: Last Modified"
+  },
+  {
+   "index": 240,
+   "letter": "IF",
+   "area": "Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+) :: Row ID*"
+  },
+  {
+   "index": 241,
+   "letter": "IG",
+   "area": "Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+)",
+   "field": "Descriptor",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+) :: Descriptor"
+  },
+  {
+   "index": 242,
+   "letter": "IH",
+   "area": "Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+)",
+   "field": "Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+) :: Type"
+  },
+  {
+   "index": 243,
+   "letter": "II",
+   "area": "Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+)",
+   "field": "Address Line Data",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+) :: Address Line Data"
+  },
+  {
+   "index": 244,
+   "letter": "IJ",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "Municipality",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: Municipality"
+  },
+  {
+   "index": 245,
+   "letter": "IK",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "Country City",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Country_Subregion_Code_In_Country",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: Country City"
+  },
+  {
+   "index": 246,
+   "letter": "IL",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "ISO 3166 1 Alpha 2 Code",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "ISO_3166-1_Alpha-2_Code",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: ISO 3166 1 Alpha 2 Code"
+  },
+  {
+   "index": 247,
+   "letter": "IM",
+   "area": "Submunicipality Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Submunicipality Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+) :: Row ID*"
+  },
+  {
+   "index": 248,
+   "letter": "IN",
+   "area": "Submunicipality Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+)",
+   "field": "Address Component Name",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Submunicipality Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+) :: Address Component Name"
+  },
+  {
+   "index": 249,
+   "letter": "IO",
+   "area": "Submunicipality Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+)",
+   "field": "Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Submunicipality Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+) :: Type"
+  },
+  {
+   "index": 250,
+   "letter": "IP",
+   "area": "Submunicipality Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+)",
+   "field": "Submunicipality Data",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Submunicipality Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+) :: Submunicipality Data"
+  },
+  {
+   "index": 251,
+   "letter": "IQ",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "Country Region",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Country_Region_ID",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: Country Region"
+  },
+  {
+   "index": 252,
+   "letter": "IR",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "Country Region Descriptor",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: Country Region Descriptor"
+  },
+  {
+   "index": 253,
+   "letter": "IS",
+   "area": "Subregion Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Subregion Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+) :: Row ID*"
+  },
+  {
+   "index": 254,
+   "letter": "IT",
+   "area": "Subregion Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+)",
+   "field": "Descriptor",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Subregion Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+) :: Descriptor"
+  },
+  {
+   "index": 255,
+   "letter": "IU",
+   "area": "Subregion Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+)",
+   "field": "Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Subregion Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+) :: Type"
+  },
+  {
+   "index": 256,
+   "letter": "IV",
+   "area": "Subregion Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+)",
+   "field": "Subregion Data",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Subregion Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+) :: Subregion Data"
+  },
+  {
+   "index": 257,
+   "letter": "IW",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "Postal Code",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: Postal Code"
+  },
+  {
+   "index": 258,
+   "letter": "IX",
+   "area": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+) :: Row ID*"
+  },
+  {
+   "index": 259,
+   "letter": "IY",
+   "area": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+)",
+   "field": "Public",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+) :: Public"
+  },
+  {
+   "index": 260,
+   "letter": "IZ",
+   "area": "Type Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+ > Usage Data+)",
+   "field": "Row ID**",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Type Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+ > Usage Data+) :: Row ID**"
+  },
+  {
+   "index": 261,
+   "letter": "JA",
+   "area": "Type Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+ > Usage Data+)",
+   "field": "Primary",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Type Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+ > Usage Data+) :: Primary"
+  },
+  {
+   "index": 262,
+   "letter": "JB",
+   "area": "Type Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+ > Usage Data+)",
+   "field": "Type*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Communication_Usage_Type_ID",
+   "key": "Type Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+ > Usage Data+) :: Type*"
+  },
+  {
+   "index": 263,
+   "letter": "JC",
+   "area": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+)",
+   "field": "Use For+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Communication_Usage_Behavior_ID",
+   "key": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+) :: Use For+"
+  },
+  {
+   "index": 264,
+   "letter": "JD",
+   "area": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+)",
+   "field": "Use For Tenanted+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Communication_Usage_Behavior_Tenanted_ID",
+   "key": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+) :: Use For Tenanted+"
+  },
+  {
+   "index": 265,
+   "letter": "JE",
+   "area": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+)",
+   "field": "Comments",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+) :: Comments"
+  },
+  {
+   "index": 266,
+   "letter": "JF",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "Number of Days",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Number",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: Number of Days"
+  },
+  {
+   "index": 267,
+   "letter": "JG",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "Municipality Local",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: Municipality Local"
+  },
+  {
+   "index": 268,
+   "letter": "JH",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "Address",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Address_ID",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: Address"
+  },
+  {
+   "index": 269,
+   "letter": "JI",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "Address ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: Address ID"
+  },
+  {
+   "index": 270,
+   "letter": "JJ",
+   "area": "Intermediary Bank Widget Data (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+)",
+   "field": "Replace All",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Intermediary Bank Widget Data (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+) :: Replace All"
+  },
+  {
+   "index": 271,
+   "letter": "JK",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "Row ID**",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: Row ID**"
+  },
+  {
+   "index": 272,
+   "letter": "JL",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "Delete",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: Delete"
+  },
+  {
+   "index": 273,
+   "letter": "JM",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "Intermediary Bank Account ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: Intermediary Bank Account ID"
+  },
+  {
+   "index": 274,
+   "letter": "JN",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "Intermediary Bank Order",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: Intermediary Bank Order"
+  },
+  {
+   "index": 275,
+   "letter": "JO",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "Country",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "ISO_3166-1_Alpha-2_Code",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: Country"
+  },
+  {
+   "index": 276,
+   "letter": "JP",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "Currency",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Currency_ID",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: Currency"
+  },
+  {
+   "index": 277,
+   "letter": "JQ",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "Bank Account Nickname",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: Bank Account Nickname"
+  },
+  {
+   "index": 278,
+   "letter": "JR",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "Bank Account Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Bank_Account_Type_Code",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: Bank Account Type"
+  },
+  {
+   "index": 279,
+   "letter": "JS",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "Bank Name",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: Bank Name"
+  },
+  {
+   "index": 280,
+   "letter": "JT",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "Routing Transit Number",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: Routing Transit Number"
+  },
+  {
+   "index": 281,
+   "letter": "JU",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "Branch ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: Branch ID"
+  },
+  {
+   "index": 282,
+   "letter": "JV",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "Branch Name",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: Branch Name"
+  },
+  {
+   "index": 283,
+   "letter": "JW",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "Bank Account Number",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: Bank Account Number"
+  },
+  {
+   "index": 284,
+   "letter": "JX",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "Check Digit",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: Check Digit"
+  },
+  {
+   "index": 285,
+   "letter": "JY",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "Bank Account Name",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: Bank Account Name"
+  },
+  {
+   "index": 286,
+   "letter": "JZ",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "Roll Number",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: Roll Number"
+  },
+  {
+   "index": 287,
+   "letter": "KA",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "IBAN",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: IBAN"
+  },
+  {
+   "index": 288,
+   "letter": "KB",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "SWIFT Bank Identification Code",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: SWIFT Bank Identification Code"
+  },
+  {
+   "index": 289,
+   "letter": "KC",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "Inactive",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: Inactive"
+  },
+  {
+   "index": 290,
+   "letter": "KD",
+   "area": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data)",
+   "field": "Bank Instructions",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data) :: Bank Instructions"
+  },
+  {
+   "index": 291,
+   "letter": "KE",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+) :: Row ID*"
+  },
+  {
+   "index": 292,
+   "letter": "KF",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+)",
+   "field": "Formatted Address",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+) :: Formatted Address"
+  },
+  {
+   "index": 293,
+   "letter": "KG",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+)",
+   "field": "Address Format Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+) :: Address Format Type"
+  },
+  {
+   "index": 294,
+   "letter": "KH",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+)",
+   "field": "Defaulted Business Site Address",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+) :: Defaulted Business Site Address"
+  },
+  {
+   "index": 295,
+   "letter": "KI",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+)",
+   "field": "Delete",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+) :: Delete"
+  },
+  {
+   "index": 296,
+   "letter": "KJ",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+)",
+   "field": "Do Not Replace All",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+) :: Do Not Replace All"
+  },
+  {
+   "index": 297,
+   "letter": "KK",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+)",
+   "field": "Effective Date",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "YYYY-MM-DD",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+) :: Effective Date"
+  },
+  {
+   "index": 298,
+   "letter": "KL",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+)",
+   "field": "Country",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "ISO_3166-1_Alpha-2_Code",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+) :: Country"
+  },
+  {
+   "index": 299,
+   "letter": "KM",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+)",
+   "field": "Last Modified",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "DateTime",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+) :: Last Modified"
+  },
+  {
+   "index": 300,
+   "letter": "KN",
+   "area": "Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+) :: Row ID*"
+  },
+  {
+   "index": 301,
+   "letter": "KO",
+   "area": "Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+)",
+   "field": "Descriptor",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+) :: Descriptor"
+  },
+  {
+   "index": 302,
+   "letter": "KP",
+   "area": "Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+)",
+   "field": "Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+) :: Type"
+  },
+  {
+   "index": 303,
+   "letter": "KQ",
+   "area": "Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+)",
+   "field": "Address Line Data",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+) :: Address Line Data"
+  },
+  {
+   "index": 304,
+   "letter": "KR",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+)",
+   "field": "Municipality",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+) :: Municipality"
+  },
+  {
+   "index": 305,
+   "letter": "KS",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+)",
+   "field": "Country City",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Country_Subregion_Code_In_Country",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+) :: Country City"
+  },
+  {
+   "index": 306,
+   "letter": "KT",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+)",
+   "field": "ISO 3166 1 Alpha 2 Code",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "ISO_3166-1_Alpha-2_Code",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+) :: ISO 3166 1 Alpha 2 Code"
+  },
+  {
+   "index": 307,
+   "letter": "KU",
+   "area": "Submunicipality Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Submunicipality Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+) :: Row ID*"
+  },
+  {
+   "index": 308,
+   "letter": "KV",
+   "area": "Submunicipality Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+)",
+   "field": "Address Component Name",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Submunicipality Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+) :: Address Component Name"
+  },
+  {
+   "index": 309,
+   "letter": "KW",
+   "area": "Submunicipality Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+)",
+   "field": "Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Submunicipality Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+) :: Type"
+  },
+  {
+   "index": 310,
+   "letter": "KX",
+   "area": "Submunicipality Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+)",
+   "field": "Submunicipality Data",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Submunicipality Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+) :: Submunicipality Data"
+  },
+  {
+   "index": 311,
+   "letter": "KY",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+)",
+   "field": "Country Region",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Country_Region_ID",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+) :: Country Region"
+  },
+  {
+   "index": 312,
+   "letter": "KZ",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+)",
+   "field": "Country Region Descriptor",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+) :: Country Region Descriptor"
+  },
+  {
+   "index": 313,
+   "letter": "LA",
+   "area": "Subregion Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Subregion Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+) :: Row ID*"
+  },
+  {
+   "index": 314,
+   "letter": "LB",
+   "area": "Subregion Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+)",
+   "field": "Descriptor",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Subregion Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+) :: Descriptor"
+  },
+  {
+   "index": 315,
+   "letter": "LC",
+   "area": "Subregion Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+)",
+   "field": "Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Subregion Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+) :: Type"
+  },
+  {
+   "index": 316,
+   "letter": "LD",
+   "area": "Subregion Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+)",
+   "field": "Subregion Data",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Subregion Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+) :: Subregion Data"
+  },
+  {
+   "index": 317,
+   "letter": "LE",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+)",
+   "field": "Postal Code",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+) :: Postal Code"
+  },
+  {
+   "index": 318,
+   "letter": "LF",
+   "area": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+) :: Row ID*"
+  },
+  {
+   "index": 319,
+   "letter": "LG",
+   "area": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+)",
+   "field": "Public",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+) :: Public"
+  },
+  {
+   "index": 320,
+   "letter": "LH",
+   "area": "Type Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+ > Usage Data+)",
+   "field": "Row ID**",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Type Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+ > Usage Data+) :: Row ID**"
+  },
+  {
+   "index": 321,
+   "letter": "LI",
+   "area": "Type Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+ > Usage Data+)",
+   "field": "Primary",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Type Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+ > Usage Data+) :: Primary"
+  },
+  {
+   "index": 322,
+   "letter": "LJ",
+   "area": "Type Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+ > Usage Data+)",
+   "field": "Type*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Communication_Usage_Type_ID",
+   "key": "Type Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+ > Usage Data+) :: Type*"
+  },
+  {
+   "index": 323,
+   "letter": "LK",
+   "area": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+)",
+   "field": "Use For+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Communication_Usage_Behavior_ID",
+   "key": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+) :: Use For+"
+  },
+  {
+   "index": 324,
+   "letter": "LL",
+   "area": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+)",
+   "field": "Use For Tenanted+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Communication_Usage_Behavior_Tenanted_ID",
+   "key": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+) :: Use For Tenanted+"
+  },
+  {
+   "index": 325,
+   "letter": "LM",
+   "area": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+)",
+   "field": "Comments",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Usage Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+) :: Comments"
+  },
+  {
+   "index": 326,
+   "letter": "LN",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+)",
+   "field": "Number of Days",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Number",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+) :: Number of Days"
+  },
+  {
+   "index": 327,
+   "letter": "LO",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+)",
+   "field": "Municipality Local",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+) :: Municipality Local"
+  },
+  {
+   "index": 328,
+   "letter": "LP",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+)",
+   "field": "Address",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Address_ID",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+) :: Address"
+  },
+  {
+   "index": 329,
+   "letter": "LQ",
+   "area": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+)",
+   "field": "Address ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+) :: Address ID"
+  },
+  {
+   "index": 330,
+   "letter": "LR",
+   "area": "Supplier Data (All)",
+   "field": "Do not pay during Bank Account updates",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Do not pay during Bank Account updates"
+  },
+  {
+   "index": 331,
+   "letter": "LS",
+   "area": "Supplier Status Data+ (All > Supplier Data)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Supplier Status Data+ (All > Supplier Data) :: Row ID*"
+  },
+  {
+   "index": 332,
+   "letter": "LT",
+   "area": "Supplier Status Data+ (All > Supplier Data)",
+   "field": "Status*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Business_Entity_Status_Value_ID",
+   "key": "Supplier Status Data+ (All > Supplier Data) :: Status*"
+  },
+  {
+   "index": 333,
+   "letter": "LU",
+   "area": "Supplier Status Data+ (All > Supplier Data)",
+   "field": "Reason",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Reason_for_Supplier_Status_Change_ID",
+   "key": "Supplier Status Data+ (All > Supplier Data) :: Reason"
+  },
+  {
+   "index": 334,
+   "letter": "LV",
+   "area": "Supplier Status Data+ (All > Supplier Data)",
+   "field": "Reason Description",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Supplier Status Data+ (All > Supplier Data) :: Reason Description"
+  },
+  {
+   "index": 335,
+   "letter": "LW",
+   "area": "Proposed Supplier Status Data (All > Supplier Data)",
+   "field": "Status*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Business_Entity_Status_Value_ID",
+   "key": "Proposed Supplier Status Data (All > Supplier Data) :: Status*"
+  },
+  {
+   "index": 336,
+   "letter": "LX",
+   "area": "Proposed Supplier Status Data (All > Supplier Data)",
+   "field": "Reason",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Reason_for_Supplier_Status_Change_ID",
+   "key": "Proposed Supplier Status Data (All > Supplier Data) :: Reason"
+  },
+  {
+   "index": 337,
+   "letter": "LY",
+   "area": "Proposed Supplier Status Data (All > Supplier Data)",
+   "field": "Reason Description",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Proposed Supplier Status Data (All > Supplier Data) :: Reason Description"
+  },
+  {
+   "index": 338,
+   "letter": "LZ",
+   "area": "Supplier Data (All)",
+   "field": "Always Separate Payments",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Always Separate Payments"
+  },
+  {
+   "index": 339,
+   "letter": "MA",
+   "area": "Supplier Data (All)",
+   "field": "Text for Default Supplier Payment Memo",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Supplier Data (All) :: Text for Default Supplier Payment Memo"
+  },
+  {
+   "index": 340,
+   "letter": "MB",
+   "area": "Supplier Data (All)",
+   "field": "Use Supplier Reference as Default Supplier Payment Memo",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Use Supplier Reference as Default Supplier Payment Memo"
+  },
+  {
+   "index": 341,
+   "letter": "MC",
+   "area": "Supplier Data (All)",
+   "field": "Use Invoice Memo as Default Supplier Payment Memo",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Use Invoice Memo as Default Supplier Payment Memo"
+  },
+  {
+   "index": 342,
+   "letter": "MD",
+   "area": "Supplier Data (All)",
+   "field": "Use Supplier Connection Memo",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Use Supplier Connection Memo"
+  },
+  {
+   "index": 343,
+   "letter": "ME",
+   "area": "Supplier Data (All)",
+   "field": "Currency",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Currency_ID",
+   "key": "Supplier Data (All) :: Currency"
+  },
+  {
+   "index": 344,
+   "letter": "MF",
+   "area": "Supplier Data (All)",
+   "field": "Accepted Currencies+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Currency_ID",
+   "key": "Supplier Data (All) :: Accepted Currencies+"
+  },
+  {
+   "index": 345,
+   "letter": "MG",
+   "area": "Supplier Classification Widget Data (All > Supplier Data)",
+   "field": "Replace All",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Classification Widget Data (All > Supplier Data) :: Replace All"
+  },
+  {
+   "index": 346,
+   "letter": "MH",
+   "area": "Supplier Classification Data+ (All > Supplier Data > Supplier Classification Widget Data)",
+   "field": "Row ID**",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Supplier Classification Data+ (All > Supplier Data > Supplier Classification Widget Data) :: Row ID**"
+  },
+  {
+   "index": 347,
+   "letter": "MI",
+   "area": "Supplier Classification Data+ (All > Supplier Data > Supplier Classification Widget Data)",
+   "field": "Delete",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Classification Data+ (All > Supplier Data > Supplier Classification Widget Data) :: Delete"
+  },
+  {
+   "index": 348,
+   "letter": "MJ",
+   "area": "Supplier Classification Data+ (All > Supplier Data > Supplier Classification Widget Data)",
+   "field": "Supplier Classification Reference ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Supplier Classification Data+ (All > Supplier Data > Supplier Classification Widget Data) :: Supplier Classification Reference ID"
+  },
+  {
+   "index": 349,
+   "letter": "MK",
+   "area": "Supplier Classification Data+ (All > Supplier Data > Supplier Classification Widget Data)",
+   "field": "Supplier Classification*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Custom_Supplier_Classification_ID",
+   "key": "Supplier Classification Data+ (All > Supplier Data > Supplier Classification Widget Data) :: Supplier Classification*"
+  },
+  {
+   "index": 350,
+   "letter": "ML",
+   "area": "Supplier Classification Data+ (All > Supplier Data > Supplier Classification Widget Data)",
+   "field": "External Supplier Classification ID",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Supplier Classification Data+ (All > Supplier Data > Supplier Classification Widget Data) :: External Supplier Classification ID"
+  },
+  {
+   "index": 351,
+   "letter": "MM",
+   "area": "Supplier Classification Data+ (All > Supplier Data > Supplier Classification Widget Data)",
+   "field": "External Supplier Classification Source",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "External_Supplier_Invoice_Source_ID",
+   "key": "Supplier Classification Data+ (All > Supplier Data > Supplier Classification Widget Data) :: External Supplier Classification Source"
+  },
+  {
+   "index": 352,
+   "letter": "MN",
+   "area": "Supplier Classification Field Interface Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Supplier Classification Field Interface Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+) :: Row ID*"
+  },
+  {
+   "index": 353,
+   "letter": "MO",
+   "area": "Supplier Classification Field Interface Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+)",
+   "field": "Supplier Classification Field*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Custom_Supplier_Classification_Field_ID",
+   "key": "Supplier Classification Field Interface Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+) :: Supplier Classification Field*"
+  },
+  {
+   "index": 354,
+   "letter": "MP",
+   "area": "Supplier Classification Field Interface Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+)",
+   "field": "Field Date Value",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "YYYY-MM-DD",
+   "key": "Supplier Classification Field Interface Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+) :: Field Date Value"
+  },
+  {
+   "index": 355,
+   "letter": "MQ",
+   "area": "Supplier Classification Field Interface Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+)",
+   "field": "Field Number Value",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Number (14,2)",
+   "key": "Supplier Classification Field Interface Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+) :: Field Number Value"
+  },
+  {
+   "index": 356,
+   "letter": "MR",
+   "area": "Supplier Classification Field Interface Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+)",
+   "field": "Field Text Value",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Supplier Classification Field Interface Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+) :: Field Text Value"
+  },
+  {
+   "index": 357,
+   "letter": "MS",
+   "area": "Supplier Classification Field Interface Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+)",
+   "field": "Field Single Select Choice",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Custom_Supplier_Classification_Field_Choice_ID",
+   "key": "Supplier Classification Field Interface Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+) :: Field Single Select Choice"
+  },
+  {
+   "index": 358,
+   "letter": "MT",
+   "area": "Supplier Classification Field Interface Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+)",
+   "field": "Field Multi Select Choice+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Custom_Supplier_Classification_Field_Choice_ID",
+   "key": "Supplier Classification Field Interface Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+) :: Field Multi Select Choice+"
+  },
+  {
+   "index": 359,
+   "letter": "MU",
+   "area": "Financials Attachment Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+ > Supplier Classification Field Interface Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Financials Attachment Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+ > Supplier Classification Field Interface Data+) :: Row ID*"
+  },
+  {
+   "index": 360,
+   "letter": "MV",
+   "area": "Financials Attachment Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+ > Supplier Classification Field Interface Data+)",
+   "field": "Content Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Financials Attachment Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+ > Supplier Classification Field Interface Data+) :: Content Type"
+  },
+  {
+   "index": 361,
+   "letter": "MW",
+   "area": "Financials Attachment Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+ > Supplier Classification Field Interface Data+)",
+   "field": "Filename",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Financials Attachment Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+ > Supplier Classification Field Interface Data+) :: Filename"
+  },
+  {
+   "index": 362,
+   "letter": "MX",
+   "area": "Financials Attachment Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+ > Supplier Classification Field Interface Data+)",
+   "field": "Encoding",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Financials Attachment Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+ > Supplier Classification Field Interface Data+) :: Encoding"
+  },
+  {
+   "index": 363,
+   "letter": "MY",
+   "area": "Financials Attachment Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+ > Supplier Classification Field Interface Data+)",
+   "field": "Compressed",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Financials Attachment Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+ > Supplier Classification Field Interface Data+) :: Compressed"
+  },
+  {
+   "index": 364,
+   "letter": "MZ",
+   "area": "Financials Attachment Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+ > Supplier Classification Field Interface Data+)",
+   "field": "File Content",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Financials Attachment Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+ > Supplier Classification Field Interface Data+) :: File Content"
+  },
+  {
+   "index": 365,
+   "letter": "NA",
+   "area": "Financials Attachment Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+ > Supplier Classification Field Interface Data+)",
+   "field": "Comment",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Financials Attachment Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+ > Supplier Classification Field Interface Data+) :: Comment"
+  },
+  {
+   "index": 366,
+   "letter": "NB",
+   "area": "Supplier Data (All)",
+   "field": "Integration System",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Integration_System_ID",
+   "key": "Supplier Data (All) :: Integration System"
+  },
+  {
+   "index": 367,
+   "letter": "NC",
+   "area": "Supplier Data (All)",
+   "field": "Do Not Reimburse Contingent Worker Expense Reports",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Supplier Data (All) :: Do Not Reimburse Contingent Worker Expense Reports"
+  },
+  {
+   "index": 368,
+   "letter": "ND",
+   "area": "Supplier Data (All)",
+   "field": "Supplier Security Segment",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Supplier_Security_Segment_ID",
+   "key": "Supplier Data (All) :: Supplier Security Segment"
+  },
+  {
+   "index": 369,
+   "letter": "NE",
+   "area": "Supplier Data (All)",
+   "field": "Supplier Note Follow-Up Date",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "YYYY-MM-DD",
+   "key": "Supplier Data (All) :: Supplier Note Follow-Up Date"
+  },
+  {
+   "index": 370,
+   "letter": "NF",
+   "area": "Business Entity Alternate Name Widget Data (All > Supplier Data)",
+   "field": "Replace All",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Business Entity Alternate Name Widget Data (All > Supplier Data) :: Replace All"
+  },
+  {
+   "index": 371,
+   "letter": "NG",
+   "area": "Business Entity Alternate Name Data+ (All > Supplier Data > Business Entity Alternate Name Widget Data)",
+   "field": "Row ID**",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Business Entity Alternate Name Data+ (All > Supplier Data > Business Entity Alternate Name Widget Data) :: Row ID**"
+  },
+  {
+   "index": 372,
+   "letter": "NH",
+   "area": "Business Entity Alternate Name Data+ (All > Supplier Data > Business Entity Alternate Name Widget Data)",
+   "field": "Delete",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Business Entity Alternate Name Data+ (All > Supplier Data > Business Entity Alternate Name Widget Data) :: Delete"
+  },
+  {
+   "index": 373,
+   "letter": "NI",
+   "area": "Business Entity Alternate Name Data+ (All > Supplier Data > Business Entity Alternate Name Widget Data)",
+   "field": "Alternate Name*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Business Entity Alternate Name Data+ (All > Supplier Data > Business Entity Alternate Name Widget Data) :: Alternate Name*"
+  },
+  {
+   "index": 374,
+   "letter": "NJ",
+   "area": "Business Entity Alternate Name Data+ (All > Supplier Data > Business Entity Alternate Name Widget Data)",
+   "field": "Alternate Name Usage*+*",
+   "occurrence": 1,
+   "restriction": "Required. May have multiples",
+   "format": "Alternate_Name_Usage_ID",
+   "key": "Business Entity Alternate Name Data+ (All > Supplier Data > Business Entity Alternate Name Widget Data) :: Alternate Name Usage*+*"
+  },
+  {
+   "index": 375,
+   "letter": "NK",
+   "area": "Financials Attachment Widget Data (All > Supplier Data)",
+   "field": "Replace All",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Financials Attachment Widget Data (All > Supplier Data) :: Replace All"
+  },
+  {
+   "index": 376,
+   "letter": "NL",
+   "area": "Attachment Data+ (All > Supplier Data > Financials Attachment Widget Data)",
+   "field": "Row ID**",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Attachment Data+ (All > Supplier Data > Financials Attachment Widget Data) :: Row ID**"
+  },
+  {
+   "index": 377,
+   "letter": "NM",
+   "area": "Note Widget Data (All > Supplier Data)",
+   "field": "Replace All",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Note Widget Data (All > Supplier Data) :: Replace All"
+  },
+  {
+   "index": 378,
+   "letter": "NN",
+   "area": "Note Data+ (All > Supplier Data > Note Widget Data)",
+   "field": "Row ID**",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Note Data+ (All > Supplier Data > Note Widget Data) :: Row ID**"
+  },
+  {
+   "index": 379,
+   "letter": "NO",
+   "area": "Note Data+ (All > Supplier Data > Note Widget Data)",
+   "field": "Created",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "DateTime",
+   "key": "Note Data+ (All > Supplier Data > Note Widget Data) :: Created"
+  },
+  {
+   "index": 380,
+   "letter": "NP",
+   "area": "Note Data+ (All > Supplier Data > Note Widget Data)",
+   "field": "Last Updated",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "DateTime",
+   "key": "Note Data+ (All > Supplier Data > Note Widget Data) :: Last Updated"
+  },
+  {
+   "index": 381,
+   "letter": "NQ",
+   "area": "Note Data+ (All > Supplier Data > Note Widget Data)",
+   "field": "Worker",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Employee_ID",
+   "key": "Note Data+ (All > Supplier Data > Note Widget Data) :: Worker"
+  },
+  {
+   "index": 382,
+   "letter": "NR",
+   "area": "Note Data+ (All > Supplier Data > Note Widget Data)",
+   "field": "Business Entity Contact",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Business_Entity_Contact_ID",
+   "key": "Note Data+ (All > Supplier Data > Note Widget Data) :: Business Entity Contact"
+  },
+  {
+   "index": 383,
+   "letter": "NS",
+   "area": "Note Data+ (All > Supplier Data > Note Widget Data)",
+   "field": "System User",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "System_User_ID",
+   "key": "Note Data+ (All > Supplier Data > Note Widget Data) :: System User"
+  },
+  {
+   "index": 384,
+   "letter": "NT",
+   "area": "Note Data+ (All > Supplier Data > Note Widget Data)",
+   "field": "Note Content",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Text",
+   "key": "Note Data+ (All > Supplier Data > Note Widget Data) :: Note Content"
+  },
+  {
+   "index": 385,
+   "letter": "NU",
+   "area": "Supplier Data (All)",
+   "field": "Spend Category or Hierarchy+",
+   "occurrence": 1,
+   "restriction": "Optional. May have multiples",
+   "format": "Resource_Category_Hierarchy_ID",
+   "key": "Supplier Data (All) :: Spend Category or Hierarchy+"
+  },
+  {
+   "index": 386,
+   "letter": "NV",
+   "area": "Supplier Data (All)",
+   "field": "Default Procurement Item",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Purchase_Item_ID",
+   "key": "Supplier Data (All) :: Default Procurement Item"
+  },
+  {
+   "index": 387,
+   "letter": "NW",
+   "area": "Supplier Data (All)",
+   "field": "Default Spend Category",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Spend_Category_ID",
+   "key": "Supplier Data (All) :: Default Spend Category"
+  },
+  {
+   "index": 388,
+   "letter": "NX",
+   "area": "Related Worktag Data (All > Supplier Data)",
+   "field": "Replace All",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Related Worktag Data (All > Supplier Data) :: Replace All"
+  },
+  {
+   "index": 389,
+   "letter": "NY",
+   "area": "Related Worktags by Type Data+ (All > Supplier Data > Related Worktag Data)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Related Worktags by Type Data+ (All > Supplier Data > Related Worktag Data) :: Row ID*"
+  },
+  {
+   "index": 390,
+   "letter": "NZ",
+   "area": "Related Worktags by Type Data+ (All > Supplier Data > Related Worktag Data)",
+   "field": "Worktag Type",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Accounting_Worktag_Type_ID",
+   "key": "Related Worktags by Type Data+ (All > Supplier Data > Related Worktag Data) :: Worktag Type"
+  },
+  {
+   "index": 391,
+   "letter": "OA",
+   "area": "Related Worktags by Type Data+ (All > Supplier Data > Related Worktag Data)",
+   "field": "Required On Transaction",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Related Worktags by Type Data+ (All > Supplier Data > Related Worktag Data) :: Required On Transaction"
+  },
+  {
+   "index": 392,
+   "letter": "OB",
+   "area": "Related Worktags by Type Data+ (All > Supplier Data > Related Worktag Data)",
+   "field": "Required On Transaction For Validation",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Related Worktags by Type Data+ (All > Supplier Data > Related Worktag Data) :: Required On Transaction For Validation"
+  },
+  {
+   "index": 393,
+   "letter": "OC",
+   "area": "Default Worktag Data (All > Supplier Data > Related Worktag Data > Related Worktags by Type Data+)",
+   "field": "Delete Default Value",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Default Worktag Data (All > Supplier Data > Related Worktag Data > Related Worktags by Type Data+) :: Delete Default Value"
+  },
+  {
+   "index": 394,
+   "letter": "OD",
+   "area": "Default Worktag Data (All > Supplier Data > Related Worktag Data > Related Worktags by Type Data+)",
+   "field": "Default Worktag",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Academic_Level_ID",
+   "key": "Default Worktag Data (All > Supplier Data > Related Worktag Data > Related Worktags by Type Data+) :: Default Worktag"
+  },
+  {
+   "index": 395,
+   "letter": "OE",
+   "area": "Default Worktag Data (All > Supplier Data > Related Worktag Data > Related Worktags by Type Data+)",
+   "field": "External Supplier Invoice Source",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "External_Supplier_Invoice_Source_ID",
+   "key": "Default Worktag Data (All > Supplier Data > Related Worktag Data > Related Worktags by Type Data+) :: External Supplier Invoice Source"
+  },
+  {
+   "index": 396,
+   "letter": "OF",
+   "area": "Related Worktags by Type Data+ (All > Supplier Data > Related Worktag Data)",
+   "field": "Replace All Allowed Values",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Related Worktags by Type Data+ (All > Supplier Data > Related Worktag Data) :: Replace All Allowed Values"
+  },
+  {
+   "index": 397,
+   "letter": "OG",
+   "area": "Allowed Worktag Data+ (All > Supplier Data > Related Worktag Data > Related Worktags by Type Data+)",
+   "field": "Row ID*",
+   "occurrence": 1,
+   "restriction": "Required",
+   "format": "Text",
+   "key": "Allowed Worktag Data+ (All > Supplier Data > Related Worktag Data > Related Worktags by Type Data+) :: Row ID*"
+  },
+  {
+   "index": 398,
+   "letter": "OH",
+   "area": "Allowed Worktag Data+ (All > Supplier Data > Related Worktag Data > Related Worktags by Type Data+)",
+   "field": "Delete Allowed Value",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Allowed Worktag Data+ (All > Supplier Data > Related Worktag Data > Related Worktags by Type Data+) :: Delete Allowed Value"
+  },
+  {
+   "index": 399,
+   "letter": "OI",
+   "area": "Allowed Worktag Data+ (All > Supplier Data > Related Worktag Data > Related Worktags by Type Data+)",
+   "field": "Allowed Worktag",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Academic_Level_ID",
+   "key": "Allowed Worktag Data+ (All > Supplier Data > Related Worktag Data > Related Worktags by Type Data+) :: Allowed Worktag"
+  },
+  {
+   "index": 400,
+   "letter": "OJ",
+   "area": "Allowed Worktag Data+ (All > Supplier Data > Related Worktag Data > Related Worktags by Type Data+)",
+   "field": "External Supplier Invoice Source",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "External_Supplier_Invoice_Source_ID",
+   "key": "Allowed Worktag Data+ (All > Supplier Data > Related Worktag Data > Related Worktags by Type Data+) :: External Supplier Invoice Source"
+  },
+  {
+   "index": 401,
+   "letter": "OK",
+   "area": "Areas Changed (All > Supplier Data)",
+   "field": "Supplier and Tax Details",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Areas Changed (All > Supplier Data) :: Supplier and Tax Details"
+  },
+  {
+   "index": 402,
+   "letter": "OL",
+   "area": "Areas Changed (All > Supplier Data)",
+   "field": "Payment Details",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Areas Changed (All > Supplier Data) :: Payment Details"
+  },
+  {
+   "index": 403,
+   "letter": "OM",
+   "area": "Areas Changed (All > Supplier Data)",
+   "field": "Supplier Hierarchy",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Areas Changed (All > Supplier Data) :: Supplier Hierarchy"
+  },
+  {
+   "index": 404,
+   "letter": "ON",
+   "area": "Areas Changed (All > Supplier Data)",
+   "field": "Contact Information",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Areas Changed (All > Supplier Data) :: Contact Information"
+  },
+  {
+   "index": 405,
+   "letter": "OO",
+   "area": "Areas Changed (All > Supplier Data)",
+   "field": "Settlement Bank Account",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Areas Changed (All > Supplier Data) :: Settlement Bank Account"
+  },
+  {
+   "index": 406,
+   "letter": "OP",
+   "area": "Areas Changed (All > Supplier Data)",
+   "field": "Alternate Names",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Areas Changed (All > Supplier Data) :: Alternate Names"
+  },
+  {
+   "index": 407,
+   "letter": "OQ",
+   "area": "Areas Changed (All > Supplier Data)",
+   "field": "Procurement Options",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Areas Changed (All > Supplier Data) :: Procurement Options"
+  },
+  {
+   "index": 408,
+   "letter": "OR",
+   "area": "Areas Changed (All > Supplier Data)",
+   "field": "Classifications",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Areas Changed (All > Supplier Data) :: Classifications"
+  },
+  {
+   "index": 409,
+   "letter": "OS",
+   "area": "Areas Changed (All > Supplier Data)",
+   "field": "Contingent  Worker  Options",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Areas Changed (All > Supplier Data) :: Contingent  Worker  Options"
+  },
+  {
+   "index": 410,
+   "letter": "OT",
+   "area": "Areas Changed (All > Supplier Data)",
+   "field": "Attachments",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Areas Changed (All > Supplier Data) :: Attachments"
+  },
+  {
+   "index": 411,
+   "letter": "OU",
+   "area": "Areas Changed (All > Supplier Data)",
+   "field": "Related Worktags",
+   "occurrence": 1,
+   "restriction": "Optional",
+   "format": "Y/N",
+   "key": "Areas Changed (All > Supplier Data) :: Related Worktags"
+  }
+ ]
+}

@@ -3,6 +3,7 @@ import { ingestView } from './ingest-view.js';
 import { mapView } from './map-view.js';
 import { refsView } from './refs-view.js';
 import { refCounts } from '../reference/resolve.js';
+import { reviewView } from './review-view.js';
 
 // Step definitions for the left-hand navigation. Each view gets the app
 // context and returns a DOM node. Views are placeholders until their milestone.
@@ -49,12 +50,12 @@ export const STEPS = [
     label: 'Review',
     title: 'Review proposed suppliers',
     helper: 'Fix issues right on the profile to see the batch status update as you go.',
-    view: () =>
-      upcoming(6, [
-        'A profile for each supplier, laid out like the Workday View Supplier page.',
-        'Inline editing with errors and warnings next to the field they belong to.',
-        'A batch dashboard with the most common issues and safe "fix all like this" actions.',
-      ]),
+    wide: true,
+    view: (ctx) => reviewView(ctx),
+    badge: (ctx) => {
+      const n = ctx.state.batch.validation?.counts.blocked ?? 0;
+      return n ? h('span.step-badge.err', { title: `${n} blocked supplier(s)` }, String(n)) : null;
+    },
   },
   {
     id: 'export',

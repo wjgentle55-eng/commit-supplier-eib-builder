@@ -1,6 +1,8 @@
 import { h } from './dom.js';
 import { ingestView } from './ingest-view.js';
 import { mapView } from './map-view.js';
+import { refsView } from './refs-view.js';
+import { refCounts } from '../reference/resolve.js';
 
 // Step definitions for the left-hand navigation. Each view gets the app
 // context and returns a DOM node. Views are placeholders until their milestone.
@@ -35,11 +37,12 @@ export const STEPS = [
     label: 'Reference IDs',
     title: 'Resolve reference IDs',
     helper: 'Resolve each value once and this workspace remembers it, to make the next batch for this client faster.',
-    view: () =>
-      upcoming(4, [
-        'Match every reference value against tenant values you load, or the built-in Workday baseline.',
-        'Mark each value Matched, Assumed, or Unresolved, with suggestions you can accept in bulk.',
-      ]),
+    view: (ctx) => refsView(ctx),
+    badge: (ctx) => {
+      const idx = ctx.state.batch.refIndex;
+      const n = idx ? refCounts(idx).unresolved : 0;
+      return n ? h('span.step-badge.err', { title: `${n} unresolved value(s)` }, String(n)) : null;
+    },
   },
   {
     id: 'review',

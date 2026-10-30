@@ -4,15 +4,10 @@ import { mapView } from './map-view.js';
 import { refsView } from './refs-view.js';
 import { refCounts } from '../reference/resolve.js';
 import { reviewView } from './review-view.js';
+import { exportView } from './export-view.js';
 
 // Step definitions for the left-hand navigation. Each view gets the app
 // context and returns a DOM node. Views are placeholders until their milestone.
-
-const upcoming = (milestone, items) =>
-  h('section.panel.callout', [
-    h('div.panel-head', [h('h3', 'What this step will do'), h('span.tag', `Milestone ${milestone}`)]),
-    h('ul.plain-list', items.map((t) => h('li', t))),
-  ]);
 
 export const STEPS = [
   {
@@ -62,21 +57,6 @@ export const STEPS = [
     label: 'Export',
     title: 'Confirm and export',
     helper: 'Confirm the assumed values first to make sure the load goes through cleanly the first time.',
-    view: (ctx) =>
-      h('div.stack', [
-        upcoming(7, [
-          'A final check of every assumed reference value and remaining error.',
-          'Exclude blocked suppliers and export the rest, or fix them first.',
-          'Download Submit_Supplier_<Client>_<date>.xlsx built on the Workday v44.1 template, plus a client-friendly exception report.',
-        ]),
-        h('section.panel', [
-          h('div.panel-head', [h('h3', 'EIB template'), h('span.chip.ok', 'Loaded')]),
-          h('dl.facts', [
-            h('dt', 'Template'), h('dd', ctx.template ? ctx.template.title : 'Loading...'),
-            h('dt', 'Columns'), h('dd', ctx.template ? String(ctx.template.columns.length) : '...'),
-            h('dt', 'Approval Status'), h('dd', ctx.workspace.settings.approvalStatusId),
-          ]),
-        ]),
-      ]),
+    view: (ctx) => exportView(ctx),
   },
 ];

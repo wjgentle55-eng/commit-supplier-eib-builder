@@ -19,6 +19,7 @@
     "xlsx": "file:vendor/xlsx-0.20.3.tgz"
   },
   "devDependencies": {
+    "iso3166-2-db": "2.3.11",
     "vite": "8.3.4",
     "vite-plugin-singlefile": "2.3.3",
     "vitest": "5.0.4"

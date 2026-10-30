@@ -4,5 +4,7 @@
 
 import { registerStage } from './pipeline.js';
 import { resolveBatch } from './reference/resolve.js';
+import { validateBatch } from './validation/engine.js';
 
 registerStage(({ suppliers, workspace }) => ({ refIndex: resolveBatch(suppliers, workspace) }));
+registerStage(({ suppliers, existingSuppliers, excluded }) => ({ validation: validateBatch(suppliers, { existingSuppliers, excluded }) }));

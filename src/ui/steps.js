@@ -81,7 +81,7 @@ export const STEPS = [
           h('dl.facts', [
             h('dt', 'Template'), h('dd', ctx.template ? ctx.template.title : 'Loading...'),
             h('dt', 'Columns'), h('dd', ctx.template ? String(ctx.template.columns.length) : '...'),
-            h('dt', 'Approval Status'), h('dd', [ctx.workspace.settings.approvalStatusId, ' ', h('span.chip.warn', 'Verify in tenant')]),
+            h('dt', 'Approval Status'), h('dd', ctx.workspace.settings.approvalStatusId),
           ]),
         ]),
       ]),

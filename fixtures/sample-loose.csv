@@ -1,0 +1,11 @@
+Vendor Master Export - Legacy ERP
+Run date: 10/29/2026
+
+Vendor,Vendor Type,Currency,Terms,Pay Method 1,Pay Method 2,Pay Method 3,Default Pay Method,Street,Street 2,City,State,Zip,Country,Address Purpose,Main Address,Email,Phone,EIN,Bank,Bank Acct #,ABA
+Agile Staffing LTD,Professional Services,INR,Net 30,Check,EFT,,EFT,"Scf 41, Market -ii",,Delhi,Haryāna,121001,India,Billing; Remit To; Shipping,Y,jsteiffel@agilestaffltd.com,,,Bank of America,4810028510,026009593
+Northwind Logistics LLC,Logistics / Freight Providers,USD,Net 30,EFT,Check,,EFT,1200 Main St,Suite 400,Dallas,TX,75202,USA,Billing; Remit To,Y,ap@northwindlogistics.example,(214) 555-0142,12-3456789,JP Morgan Chase,000123456789,111000614
+Summit Industrial Supply Inc,Equipment & Supplies Vendors,USD,Net 45,Check,ACH,Wire,Wire,88 Foundry Way,,Columbus,OH,43215-1234,USA,Billing; Remit To,Y,ar@summitindustrial.example,(614) 555-0199,98-7654321,Fifth Third Bank,7300112233,042000314
+Summit Industrial Supply Inc,Equipment & Supplies Vendors,USD,Net 45,,,,,4500 Logistics Pkwy,Dock 7,Groveport,OH,43125,USA,Shipping,N,shipping@summitindustrial.example,,,,,
+Bad Data Co,Consultants???,USD,Net 30,EFT,,,EFT,500 Congress Ave,,Austin,,7870,USA,,Y,billing@baddata.example,,1234,Lone Star Credit Union,55500011,123456789
+Bad Data Co,Consulting,USD,,,,,,,,,,,,,,owner@baddata,,,,,
+"Northwind Logistics, LLC",Logistics / Freight Providers,USD,Net 30,EFT,,,EFT,1200 Main Street,,Dallas,TX,75202,USA,,Y,,,12-3456789,JP Morgan Chase,000123456789,111000614

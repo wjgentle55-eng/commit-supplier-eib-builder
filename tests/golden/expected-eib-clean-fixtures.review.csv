@@ -1,0 +1,327 @@
+Row,Spreadsheet Key,Column,Area,Field,Value
+6,1,B,All,Spreadsheet Key*,1
+6,1,E,Business Process Parameters (All),Auto Complete,Y
+6,1,K,Supplier Data (All),Supplier Name,Agile Staffing LTD
+6,1,N,Supplier Data (All),Approval Status,APPROVED
+6,1,U,Supplier Data (All),IRS 1099 Supplier,N
+6,1,V,Supplier Data (All),Report 1099 with Parent,N
+6,1,AR,Supplier Data (All),Supplier Category,Professional_Services
+6,1,AS,Supplier Data (All),Supplier Group+,Suppliers_A_L
+6,1,AZ,Supplier Data (All),FATCA,N
+6,1,BE,Supplier Data (All),Invoice Any Supplier,N
+6,1,BF,Supplier Data (All),Edit Portal Taxes,N
+6,1,BH,Supplier Data (All),Enable Global Location Number,N
+6,1,BI,Supplier Data (All),Disable Change Order,N
+6,1,BT,Supplier Data (All),Acknowledgement Expected,N
+6,1,BU,Supplier Data (All),Supplier Minimum Order Amount,0
+6,1,BW,Supplier Data (All),Supplier Lead Time,0
+6,1,BX,Supplier Data (All),Enable ASN,N
+6,1,CD,Supplier Data (All),Payment Terms,Net_30
+6,1,CE,Supplier Data (All),Terms Based on Invoice Received Date,N
+6,1,CF,Supplier Data (All),Payment Types Accepted+,Check
+6,1,CG,Supplier Data (All),Default Payment Type,EFT
+6,1,CL,Business Entity Data (All > Supplier Data),Business Entity Name,Agile Staffing LTD
+6,1,CP,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,1
+6,1,CV,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Effective Date,2023-01-01
+6,1,CW,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Country,IN
+6,1,CY,Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Row ID*,1
+6,1,DA,Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Type,ADDRESS_LINE_1
+6,1,DB,Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Address Line Data,"Scf 41, Market -ii"
+6,1,DC,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Municipality,Delhi
+6,1,DJ,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Country Region,IND-HR
+6,1,DP,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Postal Code,121001
+6,1,DQ,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Row ID*,1
+6,1,DR,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Public,Y
+6,1,DS,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+ > Usage Data+),Row ID**,1
+6,1,DT,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+ > Usage Data+),Primary,Y
+6,1,DU,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+ > Usage Data+),Type*,BUSINESS
+6,1,DV,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Use For+,BILLING
+6,1,EB,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Address ID,ADDR-20261030-0001-1
+6,1,FB,Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,1
+6,1,FE,Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Email Address,jsteiffel@agilestaffltd.com
+6,1,FG,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+),Row ID*,1
+6,1,FH,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+),Public,Y
+6,1,FI,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+ > Usage Data+),Row ID**,1
+6,1,FJ,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+ > Usage Data+),Primary,Y
+6,1,FK,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+ > Usage Data+),Type*,BUSINESS
+6,1,FL,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+),Use For+,BILLING
+6,1,GY,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Row ID**,1
+6,1,HA,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Settlement Bank Account ID,SBA-20261030-0001-1
+6,1,HB,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Country,US
+6,1,HC,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Currency,USD
+6,1,HD,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Bank Account Nickname,Bank of America
+6,1,HE,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Bank Account Type,DDA
+6,1,HF,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Bank Name,Bank of America
+6,1,HG,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Routing Transit Number,026009593
+6,1,HJ,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Bank Account Number,4810028510
+6,1,HP,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Accepts Payment Types+,EFT
+6,1,LR,Supplier Data (All),Do not pay during Bank Account updates,N
+6,1,LS,Supplier Status Data+ (All > Supplier Data),Row ID*,1
+6,1,LT,Supplier Status Data+ (All > Supplier Data),Status*,ACTIVE
+6,1,LU,Supplier Status Data+ (All > Supplier Data),Reason,Data_Entry_Error
+6,1,LZ,Supplier Data (All),Always Separate Payments,N
+6,1,ME,Supplier Data (All),Currency,INR
+6,1,NC,Supplier Data (All),Do Not Reimburse Contingent Worker Expense Reports,N
+7,1,B,All,Spreadsheet Key*,1
+7,1,CF,Supplier Data (All),Payment Types Accepted+,EFT
+7,1,CP,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,1
+7,1,DQ,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Row ID*,1
+7,1,DV,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Use For+,REMIT
+7,1,FB,Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,1
+7,1,FG,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+),Row ID*,1
+7,1,FL,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+),Use For+,REMIT
+8,1,B,All,Spreadsheet Key*,1
+8,1,CP,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,1
+8,1,DQ,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Row ID*,1
+8,1,DV,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Use For+,SHIPPING
+8,1,FB,Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,1
+8,1,FG,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+),Row ID*,1
+8,1,FL,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+),Use For+,SHIPPING
+9,2,B,All,Spreadsheet Key*,2
+9,2,E,Business Process Parameters (All),Auto Complete,Y
+9,2,K,Supplier Data (All),Supplier Name,Northwind Logistics LLC
+9,2,M,Supplier Data (All),Restricted To Companies+,100_Commit_Demo_US
+9,2,N,Supplier Data (All),Approval Status,APPROVED
+9,2,U,Supplier Data (All),IRS 1099 Supplier,N
+9,2,X,Tax ID Data+ (All > Supplier Data > Tax ID Widget Data),Row ID**,1
+9,2,Z,Tax ID Data+ (All > Supplier Data > Tax ID Widget Data),Tax ID Text,12-3456789
+9,2,AA,Tax ID Data+ (All > Supplier Data > Tax ID Widget Data),Tax ID Type*,USA-EIN
+9,2,AB,Tax ID Data+ (All > Supplier Data > Tax ID Widget Data),Transaction Tax ID,N
+9,2,AC,Tax ID Data+ (All > Supplier Data > Tax ID Widget Data),Primary Tax ID,Y
+9,2,AR,Supplier Data (All),Supplier Category,Logistics_Freight_Providers
+9,2,AS,Supplier Data (All),Supplier Group+,Suppliers_M_Z
+9,2,BC,Supplier Data (All),DUNS Number,012345678
+9,2,CD,Supplier Data (All),Payment Terms,Net_30
+9,2,CF,Supplier Data (All),Payment Types Accepted+,EFT
+9,2,CG,Supplier Data (All),Default Payment Type,EFT
+9,2,CL,Business Entity Data (All > Supplier Data),Business Entity Name,Northwind Logistics LLC
+9,2,CP,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,1
+9,2,CW,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Country,US
+9,2,CY,Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Row ID*,1
+9,2,DA,Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Type,ADDRESS_LINE_1
+9,2,DB,Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Address Line Data,1200 Main St
+9,2,DC,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Municipality,Dallas
+9,2,DJ,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Country Region,USA-TX
+9,2,DP,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Postal Code,75202
+9,2,DQ,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Row ID*,1
+9,2,DR,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Public,Y
+9,2,DS,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+ > Usage Data+),Row ID**,1
+9,2,DT,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+ > Usage Data+),Primary,Y
+9,2,DU,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+ > Usage Data+),Type*,BUSINESS
+9,2,DV,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Use For+,BILLING
+9,2,EB,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Address ID,ADDR-20261030-0002-1
+9,2,EC,Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,1
+9,2,ED,Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data),Area Code,214
+9,2,EM,Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data),Country ISO Code,USA
+9,2,EN,Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data),International Phone Code,1
+9,2,EO,Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data),Phone Number,5550142
+9,2,EQ,Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data),Phone Device Type,Landline
+9,2,ER,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+),Row ID*,1
+9,2,ES,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+),Public,Y
+9,2,ET,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+ > Usage Data+),Row ID**,1
+9,2,EU,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+ > Usage Data+),Primary,Y
+9,2,EV,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+ > Usage Data+),Type*,BUSINESS
+9,2,FB,Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,1
+9,2,FE,Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Email Address,ap@northwindlogistics.example
+9,2,FG,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+),Row ID*,1
+9,2,FH,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+),Public,Y
+9,2,FI,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+ > Usage Data+),Row ID**,1
+9,2,FJ,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+ > Usage Data+),Primary,Y
+9,2,FK,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+ > Usage Data+),Type*,BUSINESS
+9,2,GY,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Row ID**,1
+9,2,HA,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Settlement Bank Account ID,SBA-20261030-0002-1
+9,2,HB,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Country,US
+9,2,HC,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Currency,USD
+9,2,HE,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Bank Account Type,DDA
+9,2,HF,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Bank Name,JP Morgan Chase
+9,2,HG,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Routing Transit Number,111000614
+9,2,HJ,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Bank Account Number,000123456789
+9,2,HP,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Accepts Payment Types+,EFT
+9,2,LS,Supplier Status Data+ (All > Supplier Data),Row ID*,1
+9,2,LT,Supplier Status Data+ (All > Supplier Data),Status*,ACTIVE
+9,2,ME,Supplier Data (All),Currency,USD
+9,2,MF,Supplier Data (All),Accepted Currencies+,USD
+10,2,B,All,Spreadsheet Key*,2
+10,2,CF,Supplier Data (All),Payment Types Accepted+,Check
+10,2,CP,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,1
+10,2,CY,Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Row ID*,2
+10,2,DA,Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Type,ADDRESS_LINE_2
+10,2,DB,Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Address Line Data,Suite 400
+10,2,DQ,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Row ID*,1
+10,2,DV,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Use For+,REMIT
+11,3,B,All,Spreadsheet Key*,3
+11,3,E,Business Process Parameters (All),Auto Complete,Y
+11,3,K,Supplier Data (All),Supplier Name,Summit Industrial Supply Inc
+11,3,N,Supplier Data (All),Approval Status,APPROVED
+11,3,T,Supplier Data (All),Tax Authority Form Type,1099_Misc_NEC
+11,3,U,Supplier Data (All),IRS 1099 Supplier,Y
+11,3,X,Tax ID Data+ (All > Supplier Data > Tax ID Widget Data),Row ID**,1
+11,3,Z,Tax ID Data+ (All > Supplier Data > Tax ID Widget Data),Tax ID Text,98-7654321
+11,3,AA,Tax ID Data+ (All > Supplier Data > Tax ID Widget Data),Tax ID Type*,USA-EIN
+11,3,AC,Tax ID Data+ (All > Supplier Data > Tax ID Widget Data),Primary Tax ID,Y
+11,3,AR,Supplier Data (All),Supplier Category,Equipment_Supplies_Vendors
+11,3,AS,Supplier Data (All),Supplier Group+,Suppliers_M_Z
+11,3,BA,Supplier Data (All),Certificate of Insurance Date,2026-06-30
+11,3,BJ,Supplier Data (All),Purchase Order Issue Option,Email
+11,3,BM,Default PO Issue Email Data+ (All > Supplier Data > Default PO Issue Email WWS Widget Data),Row ID**,1
+11,3,BP,Default PO Issue Email Data+ (All > Supplier Data > Default PO Issue Email WWS Widget Data),Email Address,po@summitindustrial.example
+11,3,BR,Supplier Data (All),Shipping Terms,FOB_Destination
+11,3,BS,Supplier Data (All),Shipping Method,Ground_Shipping
+11,3,BU,Supplier Data (All),Supplier Minimum Order Amount,250
+11,3,BV,Supplier Data (All),Minimum Order Amount Currency,USD
+11,3,BX,Supplier Data (All),Enable ASN,Y
+11,3,BY,Supplier Data (All),ASN Due In Days,3
+11,3,CD,Supplier Data (All),Payment Terms,Net_45
+11,3,CF,Supplier Data (All),Payment Types Accepted+,Check
+11,3,CG,Supplier Data (All),Default Payment Type,Wire
+11,3,CL,Business Entity Data (All > Supplier Data),Business Entity Name,Summit Industrial Supply Inc
+11,3,CP,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,1
+11,3,CW,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Country,US
+11,3,CY,Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Row ID*,1
+11,3,DA,Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Type,ADDRESS_LINE_1
+11,3,DB,Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Address Line Data,88 Foundry Way
+11,3,DC,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Municipality,Columbus
+11,3,DJ,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Country Region,USA-OH
+11,3,DP,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Postal Code,43215-1234
+11,3,DQ,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Row ID*,1
+11,3,DR,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Public,Y
+11,3,DS,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+ > Usage Data+),Row ID**,1
+11,3,DT,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+ > Usage Data+),Primary,Y
+11,3,DU,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+ > Usage Data+),Type*,BUSINESS
+11,3,DV,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Use For+,BILLING
+11,3,EB,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Address ID,ADDR-20261030-0003-1
+11,3,EC,Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,1
+11,3,ED,Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data),Area Code,614
+11,3,EM,Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data),Country ISO Code,USA
+11,3,EN,Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data),International Phone Code,1
+11,3,EO,Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data),Phone Number,5550199
+11,3,EQ,Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data),Phone Device Type,Landline
+11,3,ER,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+),Row ID*,1
+11,3,ES,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+),Public,Y
+11,3,ET,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+ > Usage Data+),Row ID**,1
+11,3,EU,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+ > Usage Data+),Primary,Y
+11,3,EV,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+ > Usage Data+),Type*,BUSINESS
+11,3,FB,Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,1
+11,3,FE,Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Email Address,ar@summitindustrial.example
+11,3,FG,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+),Row ID*,1
+11,3,FH,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+),Public,Y
+11,3,FI,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+ > Usage Data+),Row ID**,1
+11,3,FJ,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+ > Usage Data+),Primary,Y
+11,3,FK,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+ > Usage Data+),Type*,BUSINESS
+11,3,FL,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+),Use For+,BILLING
+11,3,GG,Web Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,1
+11,3,GJ,Web Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Web Address,https://www.summitindustrial.example
+11,3,GL,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+),Row ID*,1
+11,3,GM,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+),Public,Y
+11,3,GN,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+ > Usage Data+),Row ID**,1
+11,3,GO,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+ > Usage Data+),Primary,Y
+11,3,GP,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Web Address Data+ > Usage Data+),Type*,BUSINESS
+11,3,GY,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Row ID**,1
+11,3,HA,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Settlement Bank Account ID,SBA-20261030-0003-1
+11,3,HB,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Country,US
+11,3,HC,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Currency,USD
+11,3,HE,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Bank Account Type,DDA
+11,3,HF,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Bank Name,Fifth Third Bank
+11,3,HG,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Routing Transit Number,042000314
+11,3,HJ,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Bank Account Number,7300112233
+11,3,HO,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),SWIFT Bank Identification Code,FTBCUS3C
+11,3,HP,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Accepts Payment Types+,EFT
+11,3,HW,Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+),Row ID*,1
+11,3,ID,Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+),Country,US
+11,3,IF,Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+),Row ID*,1
+11,3,IH,Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+),Type,ADDRESS_LINE_1
+11,3,II,Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Address Data+),Address Line Data,38 Fountain Square Plaza
+11,3,IJ,Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+),Municipality,Cincinnati
+11,3,IQ,Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+),Country Region,USA-OH
+11,3,IW,Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+),Postal Code,45263
+11,3,JI,Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+),Address ID,ADDR-20261030-0003-B1
+11,3,JK,Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data),Row ID**,1
+11,3,JM,Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data),Intermediary Bank Account ID,IBA-20261030-0003-1-1
+11,3,JN,Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data),Intermediary Bank Order,1
+11,3,JO,Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data),Country,US
+11,3,JP,Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data),Currency,USD
+11,3,JR,Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data),Bank Account Type,DDA
+11,3,JS,Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data),Bank Name,Citibank N.A.
+11,3,JT,Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data),Routing Transit Number,021000089
+11,3,JW,Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data),Bank Account Number,36011122
+11,3,KB,Intermediary Bank Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data),SWIFT Bank Identification Code,CITIUS33
+11,3,KE,Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+),Row ID*,1
+11,3,KL,Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+),Country,US
+11,3,KN,Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+),Row ID*,1
+11,3,KP,Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+),Type,ADDRESS_LINE_1
+11,3,KQ,Address Line Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+ > Address Data+),Address Line Data,388 Greenwich St
+11,3,KR,Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+),Municipality,New York
+11,3,KY,Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+),Country Region,USA-NY
+11,3,LE,Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+),Postal Code,10013
+11,3,LQ,Address Data+ (All > Supplier Data > Settlement Account Widget Data > Settlement Account Data+ > Intermediary Bank Widget Data > Intermediary Bank Data+),Address ID,ADDR-20261030-0003-I1-1
+11,3,ME,Supplier Data (All),Currency,USD
+11,3,MF,Supplier Data (All),Accepted Currencies+,USD
+11,3,MH,Supplier Classification Data+ (All > Supplier Data > Supplier Classification Widget Data),Row ID**,1
+11,3,MK,Supplier Classification Data+ (All > Supplier Data > Supplier Classification Widget Data),Supplier Classification*,Diversity
+11,3,MN,Supplier Classification Field Interface Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+),Row ID*,1
+11,3,MO,Supplier Classification Field Interface Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+),Supplier Classification Field*,Small_Business
+11,3,MR,Supplier Classification Field Interface Data+ (All > Supplier Data > Supplier Classification Widget Data > Supplier Classification Data+),Field Text Value,Yes
+11,3,NG,Business Entity Alternate Name Data+ (All > Supplier Data > Business Entity Alternate Name Widget Data),Row ID**,1
+11,3,NI,Business Entity Alternate Name Data+ (All > Supplier Data > Business Entity Alternate Name Widget Data),Alternate Name*,Summit Supply
+11,3,NJ,Business Entity Alternate Name Data+ (All > Supplier Data > Business Entity Alternate Name Widget Data),Alternate Name Usage*+*,Doing_Business_As
+11,3,NY,Related Worktags by Type Data+ (All > Supplier Data > Related Worktag Data),Row ID*,1
+11,3,NZ,Related Worktags by Type Data+ (All > Supplier Data > Related Worktag Data),Worktag Type,Cost_Center
+11,3,OA,Related Worktags by Type Data+ (All > Supplier Data > Related Worktag Data),Required On Transaction,N
+11,3,OD,Default Worktag Data (All > Supplier Data > Related Worktag Data > Related Worktags by Type Data+),Default Worktag,CC100 Operations
+12,3,B,All,Spreadsheet Key*,3
+12,3,AS,Supplier Data (All),Supplier Group+,Preferred
+12,3,BM,Default PO Issue Email Data+ (All > Supplier Data > Default PO Issue Email WWS Widget Data),Row ID**,2
+12,3,BP,Default PO Issue Email Data+ (All > Supplier Data > Default PO Issue Email WWS Widget Data),Email Address,orders@summitindustrial.example
+12,3,CF,Supplier Data (All),Payment Types Accepted+,EFT
+12,3,CP,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,1
+12,3,DQ,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Row ID*,1
+12,3,DV,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Use For+,REMIT
+12,3,EC,Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,2
+12,3,ED,Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data),Area Code,614
+12,3,EM,Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data),Country ISO Code,USA
+12,3,EN,Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data),International Phone Code,1
+12,3,EO,Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data),Phone Number,5550198
+12,3,EQ,Phone Data+ (All > Supplier Data > Business Entity Data > Contact Data),Phone Device Type,Fax
+12,3,ER,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+),Row ID*,1
+12,3,ES,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+),Public,Y
+12,3,ET,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+ > Usage Data+),Row ID**,1
+12,3,EU,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+ > Usage Data+),Primary,N
+12,3,EV,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Phone Data+ > Usage Data+),Type*,BUSINESS
+12,3,FB,Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,1
+12,3,FG,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+),Row ID*,1
+12,3,FL,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+),Use For+,REMIT
+12,3,GY,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Row ID**,1
+12,3,HP,Settlement Account Data+ (All > Supplier Data > Settlement Account Widget Data),Accepts Payment Types+,Wire
+12,3,MF,Supplier Data (All),Accepted Currencies+,CAD
+12,3,NG,Business Entity Alternate Name Data+ (All > Supplier Data > Business Entity Alternate Name Widget Data),Row ID**,1
+12,3,NJ,Business Entity Alternate Name Data+ (All > Supplier Data > Business Entity Alternate Name Widget Data),Alternate Name Usage*+*,Remit_To_Payee
+13,3,B,All,Spreadsheet Key*,3
+13,3,CF,Supplier Data (All),Payment Types Accepted+,Wire
+13,3,CP,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,2
+13,3,CW,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Country,US
+13,3,CY,Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Row ID*,1
+13,3,DA,Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Type,ADDRESS_LINE_1
+13,3,DB,Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Address Line Data,4500 Logistics Pkwy
+13,3,DC,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Municipality,Groveport
+13,3,DJ,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Country Region,USA-OH
+13,3,DP,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Postal Code,43125
+13,3,DQ,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Row ID*,1
+13,3,DR,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Public,Y
+13,3,DS,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+ > Usage Data+),Row ID**,1
+13,3,DT,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+ > Usage Data+),Primary,N
+13,3,DU,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+ > Usage Data+),Type*,BUSINESS
+13,3,DV,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Use For+,SHIPPING
+13,3,EB,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Address ID,ADDR-20261030-0003-2
+13,3,FB,Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,2
+13,3,FE,Email Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Email Address,shipping@summitindustrial.example
+13,3,FG,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+),Row ID*,1
+13,3,FH,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+),Public,Y
+13,3,FI,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+ > Usage Data+),Row ID**,1
+13,3,FJ,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+ > Usage Data+),Primary,N
+13,3,FK,Type Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+ > Usage Data+),Type*,BUSINESS
+13,3,FL,Usage Data+ (All > Supplier Data > Business Entity Data > Contact Data > Email Address Data+),Use For+,SHIPPING
+14,3,B,All,Spreadsheet Key*,3
+14,3,CP,Address Data+ (All > Supplier Data > Business Entity Data > Contact Data),Row ID*,2
+14,3,CY,Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Row ID*,2
+14,3,DA,Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Type,ADDRESS_LINE_2
+14,3,DB,Address Line Data+ (All > Supplier Data > Business Entity Data > Contact Data > Address Data+),Address Line Data,Dock 7

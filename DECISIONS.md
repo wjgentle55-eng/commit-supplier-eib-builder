@@ -16,10 +16,13 @@ Status: **Locked** (agreed with Jack), **Default** (my call, open to change), **
 | D-009 | 2026-10-29 | Workbook columns ending in `+` are treated as multi-value even where row 2 doesn't say "multi" (`Classifications > Value+`, `Suppliers > Included Children+`, `Proposed Children+`). | Default |
 | D-010 | 2026-10-29 | Value Mapping headers are matched tolerantly, so the workbook's "Workday Value" matches the brief's "Workday Value(s)". | Default |
 | D-011 | 2026-10-29 | `Suppliers > Supplier Note` maps to `Note Data+ > Note Content`. | Default |
-| D-012 | 2026-10-29 | Approval Status defaults to `APPROVED` (Document_Status_ID) and is configurable per workspace. Shown as "Verify in tenant" until confirmed. | Default, open item |
-| D-013 | 2026-10-29 | Address lines go on nested `Address Line Data+` rows with Type `ADDRESS_LINE_1` through `ADDRESS_LINE_4`. City goes to `Municipality`. Subregion and Submunicipality use the same nested Type pattern. | Proposed |
-| D-014 | 2026-10-29 | Communication usage `Type*` (Communication_Usage_Type_ID) defaults to `BUSINESS` for every address, phone, email, and web address, since the workbook doesn't collect it. | Proposed |
-| D-015 | 2026-10-29 | Supplier status writes to `Supplier Status Data+` with Row ID 1. `Proposed Supplier Status Data` is left blank. | Proposed |
-| D-016 | 2026-10-29 | Region IDs: bundle a standard ISO 3166-2 subdivision list at build time so regions resolve as Assumed (for example `USA-TX`) instead of Unresolved. | Proposed |
-| D-017 | 2026-10-29 | Related Worktags and classification choice columns allow one ID type per column. Options: one ID type per export (setting), WIDs, or flag as manual load. | Open |
-| D-018 | 2026-10-29 | `Add Only` and `Submit` are left blank as submission plumbing. | Proposed |
+| D-012 | 2026-10-29 | Approval Status is `APPROVED` (Document_Status_ID), confirmed by Jack. Still editable per workspace in settings. | Locked |
+| D-013 | 2026-10-29 | Address lines go on nested `Address Line Data+` rows with Type `ADDRESS_LINE_1` through `ADDRESS_LINE_4`. City goes to `Municipality`. Subregion and Submunicipality use the same nested Type pattern. | Locked |
+| D-014 | 2026-10-29 | Communication usage `Type*` (Communication_Usage_Type_ID) defaults to `BUSINESS` for every address, phone, email, and web address, since the workbook doesn't collect it. | Locked |
+| D-015 | 2026-10-29 | Supplier status writes to `Supplier Status Data+` with Row ID 1. `Proposed Supplier Status Data` is left blank. | Locked |
+| D-016 | 2026-10-29 | Region IDs: bundle a standard ISO 3166-2 subdivision list at build time so regions resolve as Assumed (for example `USA-TX`) instead of Unresolved. | Locked |
+| D-017 | 2026-10-29 | Related Worktags and classification choice columns take one reference ID type per column, so the ID type is chosen per export in workspace settings. Suppliers whose worktags need a different ID type get flagged to load in a separate file. | Locked |
+| D-018 | 2026-10-29 | `Add Only` and `Submit` are left blank as submission plumbing. | Locked |
+| D-019 | 2026-10-29 | Baseline Use For values: Billing, Remit To, Shipping, Procurement. Anything else is loaded per client as tenant values. | Locked |
+| D-020 | 2026-10-29 | No hosted version and no login. Milestone 9 ships the single HTML file as a GitHub release asset (built by Actions). No GitHub Pages. | Locked |
+| D-021 | 2026-10-29 | No sample tenant reference export yet. The tenant value loader is built around the 3-column format (Reference ID Type, Reference ID, Display Name) plus tolerant handling of common report shapes. | Default |

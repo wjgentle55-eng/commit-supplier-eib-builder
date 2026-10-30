@@ -35,8 +35,8 @@ node scripts/generate-column-map.mjs   # re-snapshot the EIB template headers
 
 ## Milestones
 
-1. **Scaffold** (done): single-file build, branding shell, step navigation, reference data extraction, template round-trip test
-2. Ingest + model
+1. **Scaffold** (done)
+2. **Ingest + model** (done): Conversion Workbook reader, loose table reader, merge logic, temp IDs, ingest summary
 3. Map + value mapping
 4. Reference ID manager
 5. Validation engine

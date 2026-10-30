@@ -158,7 +158,7 @@ async function readFirstSheetName(zip) {
  *        data rows in order, starting at row 6; each maps column number to value
  * @returns {Promise<Uint8Array>}
  */
-export async function writeEib(templateBytes, rows) {
+export async function writeEib(templateBytes, rows, { headerOverrides = {} } = {}) {
   const tpl = await loadTemplate(templateBytes);
   const { zip, sheetXml, colStyles } = tpl;
 
@@ -171,7 +171,7 @@ export async function writeEib(templateBytes, rows) {
   // later are empty placeholders and get replaced by the data rows.
   const headerXml = [];
   for (const m of body.matchAll(/<row r="(\d+)"[\s\S]*?(?:<\/row>|\/>)(?=<row|$)/g)) {
-    if (Number(m[1]) <= HEADER_ROWS) headerXml.push(m[0]);
+    if (Number(m[1]) <= HEADER_ROWS) headerXml.push(applyHeaderOverrides(m[0], headerOverrides));
   }
 
   const lastCol = tpl.columns.length;
@@ -183,6 +183,20 @@ export async function writeEib(templateBytes, rows) {
 
   zip.file(SHEET_PATH, newSheet);
   return zip.generateAsync({ type: 'uint8array', compression: 'DEFLATE', compressionOptions: { level: 6 } });
+}
+
+/**
+ * Header cells are left exactly as Workday wrote them, except row-4 reference
+ * ID type cells the user picks on purpose (e.g. the Related Worktags ID type,
+ * DECISIONS D-017). Only the cell's value changes; its style stays.
+ */
+function applyHeaderOverrides(rowXmlText, overrides) {
+  let out = rowXmlText;
+  for (const [ref, value] of Object.entries(overrides)) {
+    const re = new RegExp(`<c r="${ref}"((?: s="\\d+")?)(?: t="[^"]*")?(?:/>|>[\\s\\S]*?</c>)`);
+    out = out.replace(re, (_, style) => `<c r="${ref}"${style} t="inlineStr"><is><t>${encodeXml(value)}</t></is></c>`);
+  }
+  return out;
 }
 
 function rowXml(r, row, colStyles, lastCol) {

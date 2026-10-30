@@ -1,0 +1,36 @@
+name: Release
+
+# Push a tag like v1.0.0 (or run this by hand) to build the single HTML file,
+# run every test, and attach the file to a GitHub release. No hosting: the
+# downloadable file is the deliverable (DECISIONS D-020).
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag to create, for example v1.0.0
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.event.inputs.tag || github.ref_name }}
+          name: Supplier EIB Builder ${{ github.event.inputs.tag || github.ref_name }}
+          files: dist/supplier-eib-builder.html
+          generate_release_notes: true

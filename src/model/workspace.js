@@ -6,8 +6,7 @@
 import { load, save } from '../ui/storage.js';
 
 export const DEFAULT_SETTINGS = Object.freeze({
-  // Document_Status_ID written to Approval Status on every supplier.
-  // Verify in tenant: see DECISIONS.md and the open items in BUILD_BRIEF.md.
+  // Document_Status_ID written to Approval Status on every supplier (D-012).
   approvalStatusId: 'APPROVED',
   addressIdPrefix: 'ADDR-',
   settlementAccountIdPrefix: 'SBA-',

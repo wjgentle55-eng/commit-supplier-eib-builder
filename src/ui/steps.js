@@ -1,4 +1,5 @@
 import { h } from './dom.js';
+import { ingestView } from './ingest-view.js';
 
 // Step definitions for the left-hand navigation. Each view gets the app
 // context and returns a DOM node. Views are placeholders until their milestone.
@@ -15,19 +16,7 @@ export const STEPS = [
     label: 'Ingest',
     title: 'Bring in supplier data',
     helper: 'Drop in a Supplier Conversion Workbook to load every tab in one go, or a loose Excel or CSV export to map it yourself.',
-    view: () =>
-      h('div.stack', [
-        h('div.dropzone', { tabIndex: 0, 'aria-disabled': 'true' }, [
-          h('div.dropzone-icon', { 'aria-hidden': 'true' }, '\u{1F4C2}'),
-          h('strong', 'Drop .xlsx, .xlsm, .xls, or .csv files here'),
-          h('span.muted', 'File reading turns on in the next build. Everything stays in this browser tab.'),
-        ]),
-        upcoming(2, [
-          'Auto-detect the Conversion Workbook by its tabs and headers, and join every tab on Supplier Name.',
-          'Read loose tables even when the header row is not row 1, and merge repeated supplier rows.',
-          'Show an ingest summary: files read, rows read, suppliers found, rows skipped and why.',
-        ]),
-      ]),
+    view: (ctx) => ingestView(ctx),
   },
   {
     id: 'map',

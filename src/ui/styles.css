@@ -220,3 +220,23 @@ button, select, input { font: inherit; color: inherit; }
 .grid td .chip + .chip { margin-left: 4px; }
 .mono { font-family: ui-monospace, Consolas, monospace; font-size: 12px; }
 @media (max-width: 760px) { .ingest-inputs { grid-template-columns: 1fr; } }
+
+/* --------------------------------------------------------------- map */
+.step-badge { margin-left: auto; min-width: 20px; padding: 0 6px; border-radius: 999px; background: var(--warn-bg); color: var(--warn-text); font-size: 11px; text-align: center; }
+.map-grid td { white-space: normal; }
+.map-grid tr.ignored td { opacity: 0.6; }
+.samples { max-width: 340px; }
+.sample { display: inline-block; margin: 0 4px 3px 0; padding: 1px 6px; border-radius: 4px; background: var(--surface-2); font-size: 12px; max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: top; }
+select.target, .defaults select, .defaults input, .rule-form select, .rule-form input, .field-input {
+  padding: 5px 8px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); color: var(--text); font-size: 13px; max-width: 100%;
+}
+select.target { min-width: 260px; }
+.warn-text { color: var(--warn-text); }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 12px; }
+.btn.small { padding: 4px 10px; font-size: 12px; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.defaults { display: flex; flex-direction: column; gap: 6px; margin-top: 6px; }
+.default-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.rule-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 8px; margin-top: 12px; }
+code { font-family: ui-monospace, Consolas, monospace; font-size: 12px; background: var(--surface-2); padding: 1px 5px; border-radius: 4px; }
+.content.wide { max-width: none; }

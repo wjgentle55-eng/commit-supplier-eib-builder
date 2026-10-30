@@ -1,5 +1,6 @@
 import { h } from './dom.js';
 import { ingestView } from './ingest-view.js';
+import { mapView } from './map-view.js';
 
 // Step definitions for the left-hand navigation. Each view gets the app
 // context and returns a DOM node. Views are placeholders until their milestone.
@@ -23,12 +24,11 @@ export const STEPS = [
     label: 'Map',
     title: 'Map columns to Workday fields',
     helper: 'Save a confirmed mapping as a profile to make the next file from this client load instantly.',
-    view: () =>
-      upcoming(3, [
-        'Suggest a Workday field for each source column from its header and sample values.',
-        'Combine several columns into one field, or split one column into a multi-value field.',
-        'Apply value mapping rules, including one legacy value becoming several Workday values.',
-      ]),
+    view: (ctx) => mapView(ctx),
+    badge: (ctx) => {
+      const pending = (ctx.state.batch.tables ?? []).filter((t) => !ctx.state.mappings[t.id]?.confirmed).length;
+      return pending ? h('span.step-badge', { title: `${pending} table(s) to map` }, String(pending)) : null;
+    },
   },
   {
     id: 'reference',

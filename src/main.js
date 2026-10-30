@@ -9,17 +9,42 @@ import {
 } from './model/workspace.js';
 import { loadTemplate, base64ToBytes } from './eib/template.js';
 import { EIB_TEMPLATE_BASE64 } from './data/eib-template.js';
+import { runIngest } from './ui/ingest-view.js';
 
 const state = {
   step: load('step', 'ingest'),
   theme: load('theme', 'system'),
   workspaces: loadWorkspaces(),
   activeWorkspaceId: null,
-  batch: { suppliers: [] }, // filled from Milestone 2 on; never persisted by default
+  // Supplier batch: in memory only. It holds bank and tax numbers, so it is
+  // never written to browser storage unless the user opts in (Milestone 8).
+  inputs: [],
+  batch: emptyBatch(),
+  ingestError: null,
   template: null,
 };
 state.activeWorkspaceId = loadActiveWorkspaceId(state.workspaces);
 if (!STEPS.some((s) => s.id === state.step)) state.step = 'ingest';
+
+function emptyBatch() {
+  return { suppliers: [], tables: [], valueMappings: [], existingSuppliers: [], summary: null, validated: false };
+}
+
+const actions = {
+  setInputs(inputs, message = null) {
+    state.inputs = inputs;
+    state.ingestError = message;
+    try {
+      state.batch = inputs.length ? { ...runIngest(inputs), validated: false } : emptyBatch();
+    } catch (err) {
+      console.error(err);
+      state.ingestError = `Something went wrong reading the files: ${err.message}`;
+    }
+    render();
+  },
+  render: () => render(),
+  go: (id) => go(id),
+};
 
 const workspace = () => state.workspaces.find((w) => w.id === state.activeWorkspaceId);
 
@@ -73,9 +98,13 @@ function header() {
       ]),
       h('div.batch-status', { role: 'status', 'aria-label': 'Batch status' }, [
         h('span.count', [h('b', String(state.batch.suppliers.length)), ' suppliers']),
-        h('span.chip.ok', `${counts.clean} clean`),
-        h('span.chip.warn', `${counts.warnings} warnings`),
-        h('span.chip.err', `${counts.blocked} blocked`),
+        ...(state.batch.suppliers.length && !state.batch.validated
+          ? [h('span.chip', { title: 'Validation runs in the Review step' }, 'Not validated yet')]
+          : [
+              h('span.chip.ok', `${counts.clean} clean`),
+              h('span.chip.warn', `${counts.warnings} warnings`),
+              h('span.chip.err', `${counts.blocked} blocked`),
+            ]),
       ]),
       h(
         'button.icon-btn',
@@ -154,7 +183,7 @@ function navKeys(e) {
 function main() {
   const i = STEPS.findIndex((s) => s.id === state.step);
   const step = STEPS[i];
-  const ctx = { state, workspace: workspace(), template: state.template };
+  const ctx = { state, actions, workspace: workspace(), template: state.template };
   return h('main.content', { id: 'main', tabIndex: -1 }, [
     h('div.step-head', [
       h('p.eyebrow', `Step ${i + 1} of ${STEPS.length}`),

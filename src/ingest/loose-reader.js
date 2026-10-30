@@ -78,7 +78,7 @@ export function extractTable(sheet) {
  * one record to every "many" section it has data for (an address, a phone,
  * a bank account, ...). Single-value conflicts are flagged for review.
  */
-export function buildSuppliersFromTable(table, mapping, { fileName = table.file ?? 'file', summary } = {}) {
+export function buildSuppliersFromTable(table, mapping, { fileName = table.file ?? 'file', summary, defaults = [] } = {}) {
   const nameMap = mapping.find((m) => m.target.section === 'supplier' && m.target.field === 'supplierName');
   if (!nameMap) throw new Error('Map a column to Supplier Name first.');
 
@@ -111,9 +111,20 @@ export function buildSuppliersFromTable(table, mapping, { fileName = table.file 
     s.rowCounts.supplier++;
     const src = (c) => ({ file: fileName, sheet: table.sheet, cell: `${colLetter(c + 1)}${row}`, column: table.headers[c] });
 
-    for (const [secKey, maps] of bySection) {
+    for (const secKey of new Set([...bySection.keys(), ...defaults.map((d) => d.target.split('.')[0])])) {
+      const maps = bySection.get(secKey) ?? [];
       const section = SECTION_BY_KEY[secKey];
       const values = collectValues(section, maps, cells, src);
+      // Defaults fill blanks, but only on records this row actually has data for.
+      if (values.size || !section.many) {
+        for (const d of defaults) {
+          const [ds, df] = d.target.split('.');
+          if (ds !== secKey || values.has(df)) continue;
+          const col = section.columns.find((c) => c.key === df);
+          if (col) values.set(df, { value: normalizeForColumn(col, d.value), source: { file: fileName, sheet: table.sheet, default: true, column: 'Set for all rows' }, col });
+        }
+      }
+      if (secKey === 'phones') splitUsPhone(values);
       if (!section.many) {
         for (const [field, { value, source, col }] of values) mergeField(s[secKey].fields, field, value, source, col);
         continue;
@@ -157,6 +168,17 @@ function collectValues(section, maps, cells, src) {
     else if (m.join !== false) cur.value = `${cur.value} ${value}`.trim();
   }
   return out;
+}
+
+/** "(214) 555-0142" with no Area Code column becomes area code 214 + number 5550142. */
+function splitUsPhone(values) {
+  const num = values.get('phoneNumber');
+  if (!num || values.has('areaCode')) return;
+  let d = num.value.replace(/\D/g, '');
+  if (d.length === 11 && d.startsWith('1')) d = d.slice(1);
+  if (d.length !== 10 || /[a-z]/i.test(num.value.replace(/ext\.?\s*\d+$/i, ''))) return;
+  values.set('areaCode', { value: d.slice(0, 3), source: num.source });
+  values.set('phoneNumber', { value: d.slice(3), source: num.source });
 }
 
 /** Merged rows often repeat the same address or phone. Skip exact repeats. */

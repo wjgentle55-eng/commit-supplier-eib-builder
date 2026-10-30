@@ -15,6 +15,7 @@ import { initialMapping } from './ui/map-view.js';
 import { applyEdits } from './model/edits.js';
 import './stages.js';
 import { loadPersistedBatch, persistBatch } from './model/batch-store.js';
+import { workspacePanel } from './ui/workspace-panel.js';
 
 const state = {
   step: load('step', 'ingest'),
@@ -61,7 +62,9 @@ function recompute() {
     summary: state.ingestResult.summary,
     validated: Boolean(derived.validation),
   };
-  if (workspace()?.settings?.persistBatch) persistBatch(state);
+  if (workspace()?.settings?.persistBatch) {
+    if (!persistBatch(state)) state.ingestError = 'This batch is too large to keep in browser storage. It will last until you close this tab.';
+  }
 }
 
 let timer = null;
@@ -236,6 +239,7 @@ function nav() {
       ),
     ),
     h('div.nav-foot', [
+      workspacePanel(ctx()),
       h('p.privacy', [
         h('strong', 'Private by design. '),
         'Everything runs in this browser tab. Supplier data is never uploaded anywhere.',
